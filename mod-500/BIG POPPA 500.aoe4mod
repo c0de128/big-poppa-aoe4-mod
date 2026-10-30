@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Essence.Editor.Modding">
+	<DataGenericPath>assets</DataGenericPath>
+	<DataIntermediatePath>cache</DataIntermediatePath>
+	<ID>44d9ed12-23d8-4545-b9bf-501dc39221bf</ID>
+	<LocDBPath>locdb\BIG POPPA 500.locdb</LocDBPath>
+	<Type>Extension</Type>
+</Mod>

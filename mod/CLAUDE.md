@@ -66,7 +66,7 @@ Civ TC source XMLs come in two flavors:
 
 | Phase | Path | Count | What |
 |---|---|---|---|
-| 2a/2b | `instances/army/standard_mode/normal_<civ>.xml` | 25 | Pop cap (`max_personnel_cap=1000`) + storage caps (`food/wood/stone/gold/militia_hre=200000`) in `army_bag`. Vikings + Scots also `resource_max_cap/popcap=1000`; Vikings also `max_vehicle_cap=1000` |
+| 2a/2b | `instances/army/standard_mode/normal_<civ>.xml` | 25 | Pop cap (`max_personnel_cap=1000` and `resource_max_cap/popcap=1000`, both on every civ) + storage caps (`food/wood/stone/gold/militia_hre=200000`) in `army_bag`. Vikings also `max_vehicle_cap=1000` |
 | 3 | `instances/ebps/gameplay/resources/gold/` | 3 | Gold piles → `initial_amount=50000` |
 | 3 | `instances/ebps/gameplay/resources/stone/` | 3 | Stone piles → 50000 |
 | 3 | `instances/ebps/gameplay/resources/food/` | 14 | Berries (8) + fish (6) → 50000. The 3 `_emi` fish have no own `initial_amount` and stay at base (1000 / 600 / 600 in the compiled mod) |

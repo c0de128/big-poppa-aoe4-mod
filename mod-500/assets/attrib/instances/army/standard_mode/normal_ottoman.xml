@@ -1,0 +1,252 @@
+<instance version="4" description="" template="army">
+	<group name="army_bag">
+		<group name="actions">
+			<string name="ability_ally_reinforcement_action_name" value="UI/command/coh2_troop_deployment_flag" />
+			<string name="ability_self_reinforcement_action_name" value="UI/command/coh2_troop_deployment_flag" />
+			<string name="ally_attack_here_action_name" value="UI/coh2_team_attack_here" />
+			<string name="ally_capture_here_action_name" value="UI/coh2_team_capture_here" />
+			<string name="ally_defend_here_action_name" value="UI/coh2_team_defend_here" />
+			<string name="fx_rally_point_action_name" value="ui/command/rally_point_order_loop" />
+			<string name="self_attack_here_action_name" value="" />
+			<string name="self_capture_here_action_name" value="" />
+			<string name="self_defend_here_action_name" value="" />
+			<string name="self_question_here_action_name" value="" />
+			<string name="ally_question_here_action_name" value="UI/coh2_team_question_here" />
+			<colour name="fx_rally_point_line_color_move" value="4293767680" />
+			<colour name="fx_rally_point_line_color_special" value="4285313770" />
+			<string name="fx_rally_point_action_name_special" value="ui/command/rally_point_order_loop_square" />
+			<string name="fx_rally_point_action_name_attack" value="ui/command/rally_point_order_loop_red" />
+			<colour name="fx_rally_point_line_color_attack" value="4294918455" />
+		</group>
+		<group name="casualties">
+			<float name="guaranteed_casualty_per_number_of_deaths" value="5" />
+			<int name="max_rescued_casualty_count" value="100" />
+		</group>
+		<enum_table name="resource_income_cap">
+			<float name="action" value="20" />
+			<float name="popcap" value="3.402823E+38" />
+			<float name="command" value="3.402823E+38" />
+			<float name="food" value="3.402823E+38" />
+			<float name="wood" value="3.402823E+38" />
+			<float name="stone" value="3.402823E+38" />
+			<float name="gold" value="3.402823E+38" />
+			<float name="militia_hre" value="0" />
+			<float name="merc_byz" value="0" />
+		</enum_table>
+		<group name="race_population_cap_table">
+			<float name="base_medic_cap" value="0" />
+			<float name="base_personnel_cap" value="0" />
+			<float name="base_vehicle_cap" value="0" />
+			<float name="max_medic_cap" value="0" />
+			<float name="max_personnel_cap" value="500" />
+			<float name="max_vehicle_cap" value="0" />
+		</group>
+		<list name="abilities">
+			<instance_reference name="ability" value="abilities\always_on_abilities\ottoman\imperial_council_manager_ott" List.ItemID="1890937502" />
+		</list>
+		<enum_table name="resource_max_cap">
+			<float name="action" value="-1" />
+			<float name="popcap" value="500" />
+			<float name="command" value="10" />
+			<float name="food" value="200000" />
+			<float name="wood" value="200000" />
+			<float name="stone" value="200000" />
+			<float name="gold" value="200000" />
+			<float name="militia_hre" value="200000" />
+			<float name="merc_byz" value="0" />
+		</enum_table>
+		<string name="badge_path" value="DATA:\art\armies\west_german\badges\default_dif" />
+		<list name="production_buildings">
+		</list>
+		<group name="ai_production_info">
+			<list name="unlocking_upgrade_list">
+			</list>
+			<list name="loadouts">
+			</list>
+		</group>
+		<list name="team_size_point_resource_multiplier">
+		</list>
+		<list name="starting_buildings">
+			<group name="starting_building" List.ItemID="1069998567">
+				<string name="key" value="default_mp" />
+				<instance_reference name="building" value="ebps\races\ottoman\buildings\building_town_center_capital_ott" />
+				<list name="player_upgrades">
+				</list>
+			</group>
+		</list>
+		<list name="field_support_production_styles">
+		</list>
+		<enum_table name="resource_starting_amount">
+			<float name="action" value="0" />
+			<float name="command" value="0" />
+			<float name="popcap" value="0" />
+			<float name="food" value="200" />
+			<float name="wood" value="200" />
+			<float name="stone" value="50" />
+			<float name="gold" value="100" />
+			<float name="militia_hre" value="0" />
+			<float name="merc_byz" value="0" />
+		</enum_table>
+		<state_tree_node name="start_actions_statetree" value="civ_start" />
+		<list name="upgrades">
+			<instance_reference name="upgrade" value="upgrade\races\ottoman\research\upgrade_imperial_janissary_company_ott" List.ItemID="-1216273783" />
+			<instance_reference name="upgrade" value="upgrade\races\ottoman\research\upgrade_imperial_manned_siege_ott" List.ItemID="1735866776" />
+			<instance_reference name="upgrade" value="upgrade\races\ottoman\research\upgrade_imperial_mehter_drums_ott" List.ItemID="-239351706" />
+			<instance_reference name="upgrade" value="upgrade\races\ottoman\research\upgrade_imperial_military_campus_ott" List.ItemID="-1766635196" />
+			<instance_reference name="upgrade" value="upgrade\races\ottoman\research\upgrade_imperial_military_training_ott" List.ItemID="-570191064" />
+			<instance_reference name="upgrade" value="upgrade\races\ottoman\research\upgrade_imperial_monk_formation_ott" List.ItemID="676283791" />
+			<instance_reference name="upgrade" value="upgrade\races\ottoman\research\upgrade_imperial_trader_capacity_ott" List.ItemID="810409795" />
+			<instance_reference name="upgrade" value="upgrade\races\ottoman\research\upgrade_anatolian_hills_ott" List.ItemID="284431337" />
+			<instance_reference name="upgrade" value="upgrade\races\ottoman\research\upgrade_imperial_great_bombard_ott" List.ItemID="1608896294" />
+			<instance_reference name="upgrade" value="upgrade\races\ottoman\research\upgrade_timariots_ott" List.ItemID="1497786363" />
+			<instance_reference name="upgrade" value="upgrade\races\ottoman\research\upgrade_imperial_pax_ottomana_ott" List.ItemID="-136189220" />
+			<instance_reference name="upgrade" value="upgrade\races\ottoman\research\upgrade_imperial_garrison_bolts_ott" List.ItemID="486458750" />
+		</list>
+		<group name="ui">
+			<list name="global_traits_summary">
+				<group name="trait" comment="Civilization Bonuses" List.ItemID="-1805664695">
+					<locstring name="title" value="11197942" />
+					<locstring name="description" value="11218659" />
+					<file name="icon" value="event_queue_high_priority_large" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Military School" List.ItemID="-1973437547">
+					<locstring name="title" value="11218652" />
+					<locstring name="description" value="11218660" />
+					<file name="icon" value="races\ottoman\buildings\military_school" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Imperial Council" List.ItemID="1459177931">
+					<locstring name="title" value="11231823" />
+					<locstring name="description" value="11231788" />
+					<file name="icon" value="event_queue_high_priority_large" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="True" />
+				</group>
+				<group name="trait" comment="Military Inducement" List.ItemID="-601329077">
+					<locstring name="title" value="11245478" />
+					<locstring name="description" value="11245479" />
+					<file name="icon" value="races\common\buildings\barracks" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Naval Bonus" List.ItemID="-527005365">
+					<locstring name="title" value="11231791" />
+					<locstring name="description" value="11231790" />
+					<file name="icon" value="races\common\units\fishing_boat" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Influence" List.ItemID="-2015247160">
+					<locstring name="title" value="11197944" />
+					<locstring name="description" value="11218651" />
+					<file name="icon" value="influence_buff" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Unique Units" List.ItemID="-886874162">
+					<locstring name="title" value="11155059" />
+					<locstring name="description" value="11218658" />
+					<file name="icon" value="event_queue_high_priority_large" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="True" />
+				</group>
+			</list>
+			<locstring name="subheader" value="11218646" />
+			<locstring name="one_liner" value="11218656" />
+			<file name="background_image" value="civ_flags\flag_ottoman" />
+			<int name="difficulty" value="2" />
+			<enum name="research_upgrade" value="ottoman_upgrade" />
+		</group>
+		<bool name="check_pop_cap_when_queuing_production_item" value="False" />
+		<enum_table name="upkeep_per_pop_per_minute_override">
+			<float name="action" value="0" />
+			<float name="command" value="0" />
+			<float name="popcap" value="0" />
+			<float name="food" value="0" />
+			<float name="wood" value="0" />
+			<float name="stone" value="0" />
+			<float name="gold" value="0" />
+			<float name="militia_hre" value="0" />
+			<float name="merc_byz" value="0" />
+		</enum_table>
+		<list name="starting_units">
+			<instance_reference name="squad" value="sbps\races\ottoman\unit_scout_1_ott" List.ItemID="459701754" />
+			<instance_reference name="squad" value="sbps\races\ottoman\unit_villager_1_ott" List.ItemID="-1721242010" />
+			<instance_reference name="squad" value="sbps\races\ottoman\unit_villager_1_ott" List.ItemID="-596266616" />
+			<instance_reference name="squad" value="sbps\races\ottoman\unit_villager_1_ott" List.ItemID="-2047756927" />
+			<instance_reference name="squad" value="sbps\races\ottoman\unit_villager_1_ott" List.ItemID="1767049674" />
+			<instance_reference name="squad" value="sbps\races\ottoman\unit_villager_1_ott" List.ItemID="-1571259115" />
+			<instance_reference name="squad" value="sbps\races\ottoman\unit_villager_1_ott" List.ItemID="-1769216487" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep" List.ItemID="-1340769980" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep" List.ItemID="-196627100" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep_black" List.ItemID="1645800069" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep_brown" List.ItemID="-1319525815" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep_brown" List.ItemID="1654469522" />
+		</list>
+		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
+			<list name="spawn_positions">
+				<group name="position_offset" List.ItemID="351093956">
+					<float name="x" value="-4" />
+					<float name="y" value="10" />
+				</group>
+				<group name="position_offset" List.ItemID="314927970">
+					<float name="x" value="-2.2" />
+					<float name="y" value="0" />
+				</group>
+				<group name="position_offset" List.ItemID="-1898543056">
+					<float name="x" value="-3.3" />
+					<float name="y" value="-2" />
+				</group>
+				<group name="position_offset" List.ItemID="1687489319">
+					<float name="x" value="-1" />
+					<float name="y" value="-2" />
+				</group>
+				<group name="position_offset" List.ItemID="274409702">
+					<float name="x" value="-2" />
+					<float name="y" value="-4" />
+				</group>
+				<group name="position_offset" List.ItemID="-878154155">
+					<float name="x" value="0" />
+					<float name="y" value="-4" />
+				</group>
+				<group name="position_offset" List.ItemID="1479340275">
+					<float name="x" value="-1" />
+					<float name="y" value="-6" />
+				</group>
+				<group name="position_offset" List.ItemID="-601268219">
+					<float name="x" value="0" />
+					<float name="y" value="1.5" />
+				</group>
+				<group name="position_offset" List.ItemID="1364791760">
+					<float name="x" value="0.4" />
+					<float name="y" value="1.8" />
+				</group>
+				<group name="position_offset" List.ItemID="-2061475133">
+					<float name="x" value="0.8" />
+					<float name="y" value="2.1" />
+				</group>
+				<group name="position_offset" List.ItemID="335403788">
+					<float name="x" value="0.8" />
+					<float name="y" value="2.4" />
+				</group>
+				<group name="position_offset" List.ItemID="151021827">
+					<float name="x" value="1.2" />
+					<float name="y" value="2.4" />
+				</group>
+			</list>
+		</template_reference>
+		<instance_reference name="starting_town" value="" />
+	</group>
+	<uniqueid name="pbgid" value="2127443" />
+	<instance_reference name="parent_pbg" value="" />
+</instance>

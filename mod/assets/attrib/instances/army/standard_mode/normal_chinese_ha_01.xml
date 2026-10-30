@@ -45,7 +45,7 @@
 		</list>
 		<enum_table name="resource_max_cap">
 			<float name="action" value="2" />
-			<float name="popcap" value="200" />
+			<float name="popcap" value="1000" />
 			<float name="command" value="10" />
 			<float name="food" value="200000" />
 			<float name="wood" value="200000" />

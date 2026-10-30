@@ -206,6 +206,65 @@ Only the 4 TC files train villagers. I searched every Vikings/Scots building for
 - Kev tested the 10:23 build (Local tuning pack) in game: **"THE MOD WORKS GREAT!"**
 - Not yet published. Next step is Kev's: publish from **Mods → My Mods → Mod Publisher** as an update to listing 503437.
 
+## Phase 6e — New cover art + rebuild (2026-10-30 12:06; not published)
+- Kev supplied new cover art (25 civs, "Updated 10/30/26"). Converted to PNG → `assets\mod.png`; the .jpg copied to `mods\extension\local\BigPoppa\BigPoppa.jpg`. Old files backed up in `work/backup_pre_coverart/`.
+- New `BigPoppa.sga` (2,643,053 bytes, 12:06) is identical in the project and local folders. 116 attrib + 2 info + 1 locale files, all extracted OK.
+- Against the tested 10:23 build, the **only** changed file is `info/mod.rrtex` (the cover image). All 116 data files and the description are byte-for-byte the same.
+
+## Phase 7 — Published (2026-10-30)
+- Kev published from the Mod Publisher. It updated the **existing listing 503437** in place (same listing, rating 4.5/5 from 16 kept). It shows the new cover art, the 25-civ description and update date 10/30/2026.
+- The new download in `mods\extension\subscriptions\503437\` (`ed0a9651...sga`, 2,643,053 bytes) is **byte-identical** to the 12:06 build (SHA-256 `bc0c1deab273c83f...`).
+- The local "Update Mod" panel crops the square cover art to a wide strip; the published listing shows it in full.
+- Public repo: https://github.com/c0de128/big-poppa-aoe4-mod
+
+## Phase 8: BIG POPPA 500 (second mod, 2026-10-30; not built or published)
+- Kev made a new tuning pack in the Content Editor: `mods\BIG POPPA 500\`, mod ID `44d9ed12-23d8-4545-b9bf-501dc39221bf` (BigPoppa is `1bfbb3a8-...`, listing 503437).
+- Kev's own project files were kept as-is: ID, manifest, `_default.burnproj`, `mod.rdo`, 1920x1080 `mod.png`, and the name/description he typed into `BIG POPPA 500_en.csv`. The CSV matches his requested text word for word.
+- The empty project was backed up to `work/backup_bp500_empty/` before changes.
+- Copied BigPoppa's 115 `assets\attrib\instances` files, with no metadata. Then, in the default variant only, every pop value of 1000 became 500:
+  - `max_personnel_cap`: 25 civs
+  - `resource_max_cap/popcap`: Vikings and Scots only (the other 23 civs stay at 200, the same as BigPoppa)
+  - Vikings `max_vehicle_cap`: 1
+- Diff against BigPoppa: 25 files differ, by exactly 28 lines, all of them pop 1000 to 500. The other 90 files are identical, and no file exists on only one side.
+- BigPoppa's 115 data files were hash-checked before and after: unchanged.
+
+## Phase 9: Both pop values match on every civ (2026-10-30; neither mod built or published)
+- **Kev's decision:** `max_personnel_cap` and `resource_max_cap/popcap` must be equal on all 25 civs. This replaces the Phase 8 rule of changing only values that were 1000.
+- **Backups:** both projects' `assets\` folders, plus BigPoppa hashes, are in `work/backup_pre_popcap1000/`.
+- **BigPoppa:** `resource_max_cap/popcap` 200 → **1000** in the default variant for the 23 civs that were still at 200.
+  - Diff of all of `assets\` against the backup: 23 files, exactly 23 lines, all `popcap 200 → 1000`. Nothing else changed.
+- **BIG POPPA 500:** the same field 200 → **500** for those 23 civs.
+  - Diff of the data files against the new BigPoppa: 25 files differ by exactly 51 lines. Those are `max_personnel_cap` 1000 → 500 (25), `popcap` 1000 → 500 (25) and Vikings `max_vehicle_cap` 1000 → 500 (1).
+  - No file exists on only one side.
+  - The name and description in `BIG POPPA 500_en.csv` match Kev's text exactly.
+- **Result:** in the default variant, BigPoppa is 1000/1000 and BIG POPPA 500 is 500/500 on all 25 civs.
+  - Campaign variants were left at 200 in both mods, as before.
+  - Other civs' `max_vehicle_cap` values are unchanged (HRE 200, Scots 21, Mongol 30, ...).
+- ⚠️ The public GitHub repo still describes the old 200 value for the 23 civs (`mod/README.md`), and its XMLs are the pre-change copies.
+
+## Phase 9b: Both mods built and verified (2026-10-30; not published)
+- **BigPoppa** `BigPoppa.sga` (2,643,038 bytes, 12:34, SHA-256 `9402119f8ef84ac6...`): the project and local copies are identical.
+  - 116 attrib + 2 info + 1 locale files, all extracted OK.
+  - Against the published 12:06 build, only 23 army files differ.
+  - Decoded: all 25 civs are `max_personnel_cap` 1000 / `resource_max_cap/popcap` 1000. Vikings `max_vehicle_cap` is 1000.
+- **BIG POPPA 500** `BIG_POPPA_500.sga` (3,447,650 bytes, 12:38, SHA-256 `6605c51d2d3ae502...`): the project and local copies are identical.
+  - 116 attrib + 2 info + 1 locale files, all extracted OK.
+  - Against the new BigPoppa build, the differences are 25 army files, `mod.bin`, `mod.rrtex` (cover), `en.ucs` (name and description), and the mod manifest RGD (named after each mod). The other 90 data files are identical.
+  - Decoded: all 25 civs are 500/500. Vikings `max_vehicle_cap` is 500.
+  - The name and description match Kev's text (with a real U+2014 dash).
+
+## Phase 9c: BIG POPPA 500 tested + cover art (2026-10-30; not published)
+- Kev tested the 12:38 BIG POPPA 500 build in game: "worked perfectly".
+- New cover art (1024x1024 JPG from Kev) converted to PNG → `mods\BIG POPPA 500\assets\mod.png`. The old 1920x1080 image is backed up in `work/backup_bp500_coverart/`. The BigPoppa cover was checked: untouched.
+- ⚠️ The "UPDATED 10/30/26" ribbon covers the last "0" of "500" in the title.
+- A rebuild is needed to pack the new cover.
+
+## Phase 9d: BIG POPPA 500 rebuilt with cover art (2026-10-30 13:11; not published)
+- `BIG_POPPA_500.sga` (2,832,996 bytes, SHA-256 `c02e00bd4c8aa359...`): the project and local copies are identical.
+  - 116 attrib + 2 info + 1 locale files, all extracted OK.
+  - Against the tested 12:38 build, the only changed file is `info/mod.rrtex` (the cover). Pop values, data and description are byte-for-byte the same.
+- The BigPoppa build is unchanged (`9402119f8ef84ac6...`).
+
 ## Decisions log
 | Date | Decision | Why |
 |---|---|---|
@@ -222,3 +281,6 @@ Only the 4 TC files train villagers. I searched every Vikings/Scots building for
 | 2026-10-30 | Tughlaq: TCs train **2 villagers**; worker elephants back to 17.0 default (1) | Kev. Done in both Tughlaq TCs; final check re-run, 0 unexpected (old files in `work/backup_pre_tughlaq_fix/`) |
 | 2026-10-30 | Mod description: say 25 civs incl. Vikings + Scots | Kev approved the shown text. Saved in `assets\locdb\BigPoppa_en.csv` (string 2, last sentence only; backup in `work/backup_pre_description/`) |
 | 2026-10-30 | Build 10:23 passed Kev's in-game test | Kev: "THE MOD WORKS GREAT!" |
+| 2026-10-30 | Published as an update to listing 503437 | Kev. Download verified identical to the tested build plus the new cover art |
+| 2026-10-30 | BIG POPPA 500: mirror BigPoppa with 500 in place of 1000 (only values that were 1000) | Kev |
+| 2026-10-30 | Both pop values equal on all 25 civs: BigPoppa 1000/1000, BIG POPPA 500 500/500 | Kev (replaces the Phase 8 rule of changing only values that were 1000) |

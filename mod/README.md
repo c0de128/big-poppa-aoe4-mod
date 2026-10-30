@@ -7,7 +7,7 @@ Age of Empires IV Tuning Pack mod. Skirmish/MP buffs across all 25 civilizations
 | Change | Value | Scope |
 |---|---|---|
 | Population cap (`max_personnel_cap`) | 200 → **1000** | All 25 civs, standard skirmish/MP |
-| Population cap (`resource_max_cap/popcap`) | 200 → **1000** | Vikings and Scots only (the original 23 civs keep 200 here, as in May 2026) |
+| Population cap (`resource_max_cap/popcap`) | 200 → **1000** | All 25 civs (both pop values match on every civ since 2026-10-30) |
 | Viking villager limit (`max_vehicle_cap`) | 200 → **1000** | Vikings only (Viking villagers use their own pop pool) |
 | Food/wood/stone/gold storage cap | 100,000 → **200,000** | All 25 civs |
 | HRE militia (`militia_hre`) storage cap | 100,000 → **200,000** | All 25 civs |

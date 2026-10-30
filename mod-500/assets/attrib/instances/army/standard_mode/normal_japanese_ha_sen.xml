@@ -1,0 +1,286 @@
+<instance version="4" description="" template="army">
+	<group name="army_bag">
+		<group name="actions">
+			<string name="ability_ally_reinforcement_action_name" value="UI/command/coh2_troop_deployment_flag" />
+			<string name="ability_self_reinforcement_action_name" value="UI/command/coh2_troop_deployment_flag" />
+			<string name="ally_attack_here_action_name" value="UI/coh2_team_attack_here" />
+			<string name="ally_capture_here_action_name" value="UI/coh2_team_capture_here" />
+			<string name="ally_defend_here_action_name" value="UI/coh2_team_defend_here" />
+			<string name="fx_rally_point_action_name" value="ui/command/rally_point_order_loop" />
+			<string name="self_attack_here_action_name" value="" />
+			<string name="self_capture_here_action_name" value="" />
+			<string name="self_defend_here_action_name" value="" />
+			<string name="self_question_here_action_name" value="" />
+			<string name="ally_question_here_action_name" value="UI/coh2_team_question_here" />
+			<colour name="fx_rally_point_line_color_move" value="4293767680" />
+			<colour name="fx_rally_point_line_color_special" value="4285313770" />
+			<string name="fx_rally_point_action_name_special" value="ui/command/rally_point_order_loop_square" />
+			<string name="fx_rally_point_action_name_attack" value="ui/command/rally_point_order_loop_red" />
+			<colour name="fx_rally_point_line_color_attack" value="4294918455" />
+		</group>
+		<group name="casualties">
+			<float name="guaranteed_casualty_per_number_of_deaths" value="5" />
+			<int name="max_rescued_casualty_count" value="100" />
+		</group>
+		<enum_table name="resource_income_cap">
+			<float name="action" value="20" />
+			<float name="popcap" value="3.402823E+38" />
+			<float name="command" value="3.402823E+38" />
+			<float name="food" value="3.402823E+38" />
+			<float name="wood" value="3.402823E+38" />
+			<float name="stone" value="3.402823E+38" />
+			<float name="gold" value="3.402823E+38" />
+			<float name="militia_hre" value="0" />
+			<float name="merc_byz" value="0" />
+		</enum_table>
+		<group name="race_population_cap_table">
+			<float name="base_medic_cap" value="0" />
+			<float name="base_personnel_cap" value="0" />
+			<float name="base_vehicle_cap" value="0" />
+			<float name="max_medic_cap" value="0" />
+			<float name="max_personnel_cap" value="500" />
+			<float name="max_vehicle_cap" value="0" />
+		</group>
+		<list name="abilities">
+			<instance_reference name="ability" value="abilities\always_on_abilities\japanese_ha_sen\player_daimyo_level_bonuses_jpn_ha_sen" List.ItemID="1957528582" />
+		</list>
+		<enum_table name="resource_max_cap">
+			<float name="action" value="100000" />
+			<float name="popcap" value="500" />
+			<float name="command" value="100000" />
+			<float name="food" value="200000" />
+			<float name="wood" value="200000" />
+			<float name="stone" value="200000" />
+			<float name="gold" value="200000" />
+			<float name="militia_hre" value="200000" />
+			<float name="merc_byz" value="0" />
+		</enum_table>
+		<string name="badge_path" value="DATA:\art\armies\west_german\badges\default_dif" />
+		<list name="production_buildings">
+		</list>
+		<group name="ai_production_info">
+			<list name="unlocking_upgrade_list">
+				<group name="unlocking_upgrade_info" List.ItemID="444513390">
+					<instance_reference name="upgrade_pbg" value="upgrade\races\japanese_ha_sen\research\upgrade_yatai_farm_gather_jpn_ha_sen" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+						<instance_reference name="upgraded_squad" value="sbps\races\japanese_ha_sen\unit_yatai_1_jpn_ha_sen" List.ItemID="1956685827" />
+					</list>
+				</group>
+			</list>
+			<list name="loadouts">
+			</list>
+		</group>
+		<list name="team_size_point_resource_multiplier">
+		</list>
+		<list name="starting_buildings">
+			<group name="starting_building" List.ItemID="1235090145">
+				<string name="key" value="default_mp" />
+				<instance_reference name="building" value="ebps\races\japanese_ha_sen\buildings\building_town_center_capital_jpn_ha_sen" />
+				<list name="player_upgrades">
+				</list>
+			</group>
+		</list>
+		<list name="field_support_production_styles">
+		</list>
+		<enum_table name="resource_starting_amount">
+			<float name="action" value="0" />
+			<float name="command" value="4" />
+			<float name="popcap" value="0" />
+			<float name="food" value="200" />
+			<float name="wood" value="150" />
+			<float name="stone" value="0" />
+			<float name="gold" value="100" />
+			<float name="militia_hre" value="0" />
+			<float name="merc_byz" value="0" />
+		</enum_table>
+		<state_tree_node name="start_actions_statetree" value="civ_start\Japanese_ha_sen" />
+		<list name="upgrades">
+		</list>
+		<group name="ui">
+			<list name="global_traits_summary">
+				<group name="trait" comment="Civilization Bonuses" List.ItemID="-1098835268">
+					<locstring name="title" value="11221921" />
+					<locstring name="description" value="11269892" />
+					<file name="icon" value="event_queue_high_priority_large" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Daimyo Estates&#xD;&#xA;&#xD;&#xA;" List.ItemID="-456915135">
+					<locstring name="title" value="11269895" />
+					<locstring name="description" value="0" />
+					<file name="icon" value="races\sengoku\buildings\daimyo" />
+					<template_reference name="description_formatter" value="ui_text_formatter">
+						<list name="formatter_arguments">
+							<int name="int_value" value="20" List.ItemID="1330526965" />
+							<int name="int_value" value="100" List.ItemID="-1482670412" />
+							<int name="int_value" value="200" List.ItemID="1908488490" />
+							<int name="int_value" value="20" List.ItemID="59708618" />
+						</list>
+						<locstring name="formatter" value="11269893" />
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Yatai/Matsuri and Gaia" List.ItemID="-1187440018">
+					<locstring name="title" value="11269902" />
+					<locstring name="description" value="0" />
+					<file name="icon" value="races\sengoku\units\yatai" />
+					<template_reference name="description_formatter" value="ui_text_formatter">
+						<list name="formatter_arguments">
+							<int name="int_value" value="2" List.ItemID="-1064804618" />
+							<int name="int_value" value="200" List.ItemID="1915118242" />
+							<int name="int_value" value="5" List.ItemID="-1286597098" />
+							<int name="int_value" value="12" List.ItemID="1693465572" />
+						</list>
+						<locstring name="formatter" value="11269896" />
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Farmhouse and Forge" List.ItemID="2109342458">
+					<locstring name="title" value="11247715" />
+					<locstring name="description" value="11247714" />
+					<file name="icon" value="races\japanese\buildings\building_miningcamp" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Oda's Fortress" List.ItemID="579174726">
+					<locstring name="title" value="11258366" />
+					<locstring name="description" value="11258365" />
+					<file name="icon" value="races\common\buildings\keep" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Silver Mining" List.ItemID="-1753469973">
+					<locstring name="title" value="11252358" />
+					<locstring name="description" value="0" />
+					<file name="icon" value="races\common\buildings\gold_mining_camp" />
+					<template_reference name="description_formatter" value="ui_text_formatter">
+						<list name="formatter_arguments">
+							<int name="int_value" value="20" List.ItemID="-1580460413" />
+						</list>
+						<locstring name="formatter" value="11252359" />
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Fishing Village" List.ItemID="375714983">
+					<locstring name="title" value="11247718" />
+					<locstring name="description" value="0" />
+					<file name="icon" value="races\common\units\fishing_boat" />
+					<template_reference name="description_formatter" value="ui_text_formatter">
+						<list name="formatter_arguments">
+							<int name="int_value" value="25" List.ItemID="-1583516532" />
+						</list>
+						<locstring name="formatter" value="11247719" />
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Animal Reveal" List.ItemID="-1873882954">
+					<locstring name="title" value="11271714" />
+					<locstring name="description" value="11271713" />
+					<file name="icon" value="resources\resource_deer_icon" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Unique Units" List.ItemID="-44216180">
+					<locstring name="title" value="11221914" />
+					<locstring name="description" value="11269894" />
+					<file name="icon" value="event_queue_high_priority_large" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="True" />
+				</group>
+			</list>
+			<locstring name="subheader" value="11247691" />
+			<locstring name="one_liner" value="11269890" />
+			<file name="background_image" value="civ_flags\flag_sen" />
+			<int name="difficulty" value="3" />
+			<enum name="research_upgrade" value="japanese_upgrade" />
+		</group>
+		<bool name="check_pop_cap_when_queuing_production_item" value="False" />
+		<enum_table name="upkeep_per_pop_per_minute_override">
+			<float name="action" value="0" />
+			<float name="command" value="0" />
+			<float name="popcap" value="0" />
+			<float name="food" value="0" />
+			<float name="wood" value="0" />
+			<float name="stone" value="0" />
+			<float name="gold" value="0" />
+			<float name="militia_hre" value="0" />
+			<float name="merc_byz" value="0" />
+		</enum_table>
+		<list name="starting_units">
+			<instance_reference name="squad" value="sbps\races\japanese_ha_sen\unit_scout_1_jpn_ha_sen" List.ItemID="-1035800688" />
+			<instance_reference name="squad" value="sbps\races\japanese_ha_sen\unit_villager_1_jpn_ha_sen" List.ItemID="-300800441" />
+			<instance_reference name="squad" value="sbps\races\japanese_ha_sen\unit_villager_1_jpn_ha_sen" List.ItemID="77960990" />
+			<instance_reference name="squad" value="sbps\races\japanese_ha_sen\unit_villager_1_jpn_ha_sen" List.ItemID="-1464831830" />
+			<instance_reference name="squad" value="sbps\races\japanese_ha_sen\unit_villager_1_jpn_ha_sen" List.ItemID="-169241394" />
+			<instance_reference name="squad" value="sbps\races\japanese_ha_sen\unit_villager_1_jpn_ha_sen" List.ItemID="-450567170" />
+			<instance_reference name="squad" value="sbps\races\japanese_ha_sen\unit_villager_1_jpn_ha_sen" List.ItemID="-26762507" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep" List.ItemID="1968988764" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep" List.ItemID="2142765758" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep_black" List.ItemID="671343679" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep_brown" List.ItemID="-221257382" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep_brown" List.ItemID="516501411" />
+		</list>
+		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
+			<list name="spawn_positions">
+				<group name="position_offset" List.ItemID="472229721">
+					<float name="x" value="-4" />
+					<float name="y" value="5" />
+				</group>
+				<group name="position_offset" List.ItemID="636395486">
+					<float name="x" value="-2.2" />
+					<float name="y" value="0" />
+				</group>
+				<group name="position_offset" List.ItemID="-1257405859">
+					<float name="x" value="-3.3" />
+					<float name="y" value="-2" />
+				</group>
+				<group name="position_offset" List.ItemID="1120042456">
+					<float name="x" value="-1" />
+					<float name="y" value="-2" />
+				</group>
+				<group name="position_offset" List.ItemID="-1529767965">
+					<float name="x" value="-2" />
+					<float name="y" value="-4" />
+				</group>
+				<group name="position_offset" List.ItemID="-1463292143">
+					<float name="x" value="0" />
+					<float name="y" value="-4" />
+				</group>
+				<group name="position_offset" List.ItemID="27419012">
+					<float name="x" value="-1" />
+					<float name="y" value="-6" />
+				</group>
+				<group name="position_offset" List.ItemID="1544064147">
+					<float name="x" value="0" />
+					<float name="y" value="1.5" />
+				</group>
+				<group name="position_offset" List.ItemID="-71976570">
+					<float name="x" value="0.4" />
+					<float name="y" value="1.8" />
+				</group>
+				<group name="position_offset" List.ItemID="-1609650308">
+					<float name="x" value="0.8" />
+					<float name="y" value="2.1" />
+				</group>
+				<group name="position_offset" List.ItemID="1670171530">
+					<float name="x" value="0.8" />
+					<float name="y" value="2.4" />
+				</group>
+				<group name="position_offset" List.ItemID="286671429">
+					<float name="x" value="1.2" />
+					<float name="y" value="2.4" />
+				</group>
+			</list>
+		</template_reference>
+		<instance_reference name="starting_town" value="" />
+	</group>
+	<uniqueid name="pbgid" value="9000856" />
+	<instance_reference name="parent_pbg" value="" />
+</instance>

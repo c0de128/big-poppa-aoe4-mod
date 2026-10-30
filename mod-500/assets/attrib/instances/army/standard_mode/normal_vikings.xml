@@ -1,0 +1,275 @@
+<instance version="4" description="" template="army">
+	<group name="army_bag">
+		<group name="actions">
+			<string name="ability_ally_reinforcement_action_name" value="UI/command/coh2_troop_deployment_flag" />
+			<string name="ability_self_reinforcement_action_name" value="UI/command/coh2_troop_deployment_flag" />
+			<string name="ally_attack_here_action_name" value="UI/coh2_team_attack_here" />
+			<string name="ally_capture_here_action_name" value="UI/coh2_team_capture_here" />
+			<string name="ally_defend_here_action_name" value="UI/coh2_team_defend_here" />
+			<string name="fx_rally_point_action_name" value="ui/command/rally_point_order_loop" />
+			<string name="self_attack_here_action_name" value="" />
+			<string name="self_capture_here_action_name" value="" />
+			<string name="self_defend_here_action_name" value="" />
+			<string name="self_question_here_action_name" value="" />
+			<string name="ally_question_here_action_name" value="UI/coh2_team_question_here" />
+			<colour name="fx_rally_point_line_color_move" value="4293767680" />
+			<colour name="fx_rally_point_line_color_special" value="4285313770" />
+			<string name="fx_rally_point_action_name_special" value="ui/command/rally_point_order_loop_square" />
+			<string name="fx_rally_point_action_name_attack" value="ui/command/rally_point_order_loop_red" />
+			<colour name="fx_rally_point_line_color_attack" value="4294918455" />
+		</group>
+		<group name="casualties">
+			<float name="guaranteed_casualty_per_number_of_deaths" value="5" />
+			<int name="max_rescued_casualty_count" value="100" />
+		</group>
+		<enum_table name="resource_income_cap">
+			<float name="action" value="20" />
+			<float name="popcap" value="3.402823E+38" />
+			<float name="command" value="3.402823E+38" />
+			<float name="food" value="3.402823E+38" />
+			<float name="wood" value="3.402823E+38" />
+			<float name="stone" value="3.402823E+38" />
+			<float name="gold" value="3.402823E+38" />
+			<float name="militia_hre" value="3.402823E+38" />
+			<float name="merc_byz" value="3.402823E+38" />
+		</enum_table>
+		<group name="race_population_cap_table">
+			<float name="base_medic_cap" value="0" />
+			<float name="base_personnel_cap" value="0" />
+			<float name="base_vehicle_cap" value="0" />
+			<float name="max_medic_cap" value="0" />
+			<float name="max_personnel_cap" value="500" />
+			<float name="max_vehicle_cap" value="500" />
+		</group>
+		<list name="abilities">
+			<instance_reference name="ability" value="abilities\timed_abilities\vikings\sagas\unlock_bear_saga_vik" List.ItemID="872564004" />
+			<instance_reference name="ability" value="abilities\timed_abilities\vikings\sagas\unlock_dragon_saga_vik" List.ItemID="1551369535" />
+			<instance_reference name="ability" value="abilities\timed_abilities\vikings\sagas\unlock_falcon_saga_vik" List.ItemID="-1028702947" />
+			<instance_reference name="ability" value="abilities\timed_abilities\vikings\sagas\unlock_raven_saga_vik" List.ItemID="942358546" />
+			<instance_reference name="ability" value="abilities\timed_abilities\vikings\sagas\unlock_serpent_saga_vik" List.ItemID="-1069513840" />
+			<instance_reference name="ability" value="abilities\timed_abilities\vikings\sagas\unlock_sheep_saga_vik" List.ItemID="1401806398" />
+			<instance_reference name="ability" value="abilities\timed_abilities\vikings\sagas\unlock_wolf_saga_vik" List.ItemID="1921599961" />
+			<instance_reference name="ability" value="abilities\always_on_abilities\vikings\saga_auto_activation_vik" List.ItemID="1017287706" />
+		</list>
+		<enum_table name="resource_max_cap">
+			<float name="action" value="100000" />
+			<float name="popcap" value="500" />
+			<float name="command" value="100000" />
+			<float name="food" value="200000" />
+			<float name="wood" value="200000" />
+			<float name="stone" value="200000" />
+			<float name="gold" value="200000" />
+			<float name="militia_hre" value="200000" />
+			<float name="merc_byz" value="100000" />
+		</enum_table>
+		<string name="badge_path" value="DATA:\art\armies\west_german\badges\default_dif" />
+		<list name="production_buildings">
+		</list>
+		<group name="ai_production_info">
+			<list name="unlocking_upgrade_list">
+			</list>
+			<list name="loadouts">
+			</list>
+		</group>
+		<list name="team_size_point_resource_multiplier">
+		</list>
+		<list name="starting_buildings">
+			<group name="starting_building" List.ItemID="-1366497372">
+				<string name="key" value="default_mp" />
+				<instance_reference name="building" value="ebps\races\vikings\buildings\building_town_center_capital_vik" />
+				<list name="player_upgrades">
+				</list>
+			</group>
+		</list>
+		<list name="field_support_production_styles">
+		</list>
+		<enum_table name="resource_starting_amount">
+			<float name="action" value="0" />
+			<float name="command" value="0" />
+			<float name="popcap" value="0" />
+			<float name="food" value="0" />
+			<float name="wood" value="200" />
+			<float name="stone" value="0" />
+			<float name="gold" value="100" />
+			<float name="militia_hre" value="0" />
+			<float name="merc_byz" value="0" />
+		</enum_table>
+		<state_tree_node name="start_actions_statetree" value="civ_start\Vikings" />
+		<list name="upgrades">
+		</list>
+		<group name="ui">
+			<list name="global_traits_summary">
+				<group name="trait" comment="Civilization Bonuses" List.ItemID="-1683488349">
+					<locstring name="title" value="11221921" />
+					<locstring name="description" value="11273587" />
+					<file name="icon" value="event_queue_high_priority_large" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Sagas&#xD;&#xA;" List.ItemID="-370344006">
+					<locstring name="title" value="11273588" />
+					<locstring name="description" value="11273589" />
+					<file name="icon" value="races\vikings\abilities\saga_raven_activation" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="True" />
+				</group>
+				<group name="trait" comment="Nothern Migration" List.ItemID="-735472821">
+					<locstring name="title" value="11273590" />
+					<locstring name="description" value="0" />
+					<file name="icon" value="races\vikings\abilities\northern_migration" />
+					<template_reference name="description_formatter" value="ui_text_formatter">
+						<list name="formatter_arguments">
+							<int name="int_value" value="10" List.ItemID="-1993685907" />
+						</list>
+						<locstring name="formatter" value="11273591" />
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Longhouses" List.ItemID="-1024606336">
+					<locstring name="title" value="11273592" />
+					<locstring name="description" value="11273593" />
+					<file name="icon" value="races\vikings\buildings\building_longhouse" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Seidr" List.ItemID="-1509993511">
+					<locstring name="title" value="11273008" />
+					<locstring name="description" value="11273595" />
+					<file name="icon" value="races\vikings\units\volva" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Bondi" List.ItemID="508390044">
+					<locstring name="title" value="11273004" />
+					<locstring name="description" value="11273596" />
+					<file name="icon" value="races\vikings\units\bondi" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Berserker" List.ItemID="1898067779">
+					<locstring name="title" value="11272997" />
+					<locstring name="description" value="11273609" />
+					<file name="icon" value="races\vikings\units\berserker" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Raid and Living off the Land" List.ItemID="-118243733">
+					<locstring name="title" value="11273148" />
+					<locstring name="description" value="11273610" />
+					<file name="icon" value="races\vikings\abilities\living_off_the_land" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Longship and Drakkar" List.ItemID="-129742314">
+					<locstring name="title" value="11273612" />
+					<locstring name="description" value="11273614" />
+					<file name="icon" value="races\vikings\units\longship_1" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Influence" List.ItemID="1902651385">
+					<locstring name="title" value="11197927" />
+					<locstring name="description" value="11274798" />
+					<file name="icon" value="influence_buff" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+			</list>
+			<locstring name="subheader" value="11273532" />
+			<locstring name="one_liner" value="11273533" />
+			<file name="background_image" value="civ_flags\flag_vik" />
+			<int name="difficulty" value="1" />
+			<enum name="research_upgrade" value="vikings_upgrade" />
+		</group>
+		<bool name="check_pop_cap_when_queuing_production_item" value="False" />
+		<enum_table name="upkeep_per_pop_per_minute_override">
+			<float name="action" value="0" />
+			<float name="command" value="0" />
+			<float name="popcap" value="0" />
+			<float name="food" value="0" />
+			<float name="wood" value="0" />
+			<float name="stone" value="0" />
+			<float name="gold" value="0" />
+			<float name="militia_hre" value="0" />
+			<float name="merc_byz" value="0" />
+		</enum_table>
+		<list name="starting_units">
+			<instance_reference name="squad" value="sbps\races\vikings\unit_scout_1_vik" List.ItemID="876020193" />
+			<instance_reference name="squad" value="sbps\races\vikings\unit_villager_1_vik" List.ItemID="1117047629" />
+			<instance_reference name="squad" value="sbps\races\vikings\unit_villager_1_vik" List.ItemID="571556260" />
+			<instance_reference name="squad" value="sbps\races\vikings\unit_villager_1_vik" List.ItemID="1198906296" />
+			<instance_reference name="squad" value="sbps\races\vikings\unit_villager_1_vik" List.ItemID="-424081105" />
+			<instance_reference name="squad" value="sbps\races\vikings\unit_villager_1_vik" List.ItemID="2042507391" />
+			<instance_reference name="squad" value="sbps\races\vikings\unit_villager_1_vik" List.ItemID="1888194499" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep" List.ItemID="-581098563" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep" List.ItemID="208035352" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep_black" List.ItemID="-1245720223" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep_brown" List.ItemID="-129257452" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep_brown" List.ItemID="-1738246617" />
+		</list>
+		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
+			<list name="spawn_positions">
+				<group name="position_offset" List.ItemID="311187629">
+					<float name="x" value="-4" />
+					<float name="y" value="10" />
+				</group>
+				<group name="position_offset" List.ItemID="766235588">
+					<float name="x" value="-2.2" />
+					<float name="y" value="0" />
+				</group>
+				<group name="position_offset" List.ItemID="-368066257">
+					<float name="x" value="-3.3" />
+					<float name="y" value="-2" />
+				</group>
+				<group name="position_offset" List.ItemID="-1813943004">
+					<float name="x" value="-1" />
+					<float name="y" value="-2" />
+				</group>
+				<group name="position_offset" List.ItemID="180565718">
+					<float name="x" value="-2" />
+					<float name="y" value="-4" />
+				</group>
+				<group name="position_offset" List.ItemID="-448775504">
+					<float name="x" value="0" />
+					<float name="y" value="-4" />
+				</group>
+				<group name="position_offset" List.ItemID="-927540672">
+					<float name="x" value="-1" />
+					<float name="y" value="-6" />
+				</group>
+				<group name="position_offset" List.ItemID="-208461182">
+					<float name="x" value="0" />
+					<float name="y" value="1.5" />
+				</group>
+				<group name="position_offset" List.ItemID="559249555">
+					<float name="x" value="0.4" />
+					<float name="y" value="1.8" />
+				</group>
+				<group name="position_offset" List.ItemID="1011543254">
+					<float name="x" value="0.8" />
+					<float name="y" value="2.1" />
+				</group>
+				<group name="position_offset" List.ItemID="1412641192">
+					<float name="x" value="0.8" />
+					<float name="y" value="2.4" />
+				</group>
+				<group name="position_offset" List.ItemID="148412027">
+					<float name="x" value="1.2" />
+					<float name="y" value="2.4" />
+				</group>
+			</list>
+		</template_reference>
+		<instance_reference name="starting_town" value="" />
+	</group>
+	<uniqueid name="pbgid" value="9005857" />
+	<instance_reference name="parent_pbg" value="" />
+</instance>
