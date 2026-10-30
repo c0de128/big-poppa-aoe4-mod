@@ -4,7 +4,7 @@ Operational notes for Claude. Read before touching this mod.
 
 ## What this is
 
-Age of Empires IV "Tuning Pack" mod. Buffs economy and pop cap across all 23 skirmish/MP civilizations. Tested with the AoE4 Content Editor (`EssenceEditor.exe`) on Windows.
+Age of Empires IV "Tuning Pack" mod. Buffs economy and pop cap across all 25 skirmish/MP civilizations (Vikings and Scots added for update 17.0, 2026-10-30). Tested with the AoE4 Content Editor (`EssenceEditor.exe`) on Windows.
 
 Mod ID: `1bfbb3a8-719b-448e-8469-f58c7363bc36`. Type: Extension.
 
@@ -62,23 +62,31 @@ Civ TC source XMLs come in two flavors:
 
 **Critical**: Overriding only `core/building_town_center` does NOT propagate to merging civs at burn time. Tested and failed in-game. Per-civ explicit injection is required. The base game's working "1000pop,MoreResources,FasterVillages" mod uses this same approach.
 
-## File inventory (109 instance files)
+## File inventory (115 instance files)
 
 | Phase | Path | Count | What |
 |---|---|---|---|
-| 2a/2b | `instances/army/standard_mode/normal_<civ>.xml` | 23 | Pop cap (`max_personnel_cap=1000`) + storage caps (`food/wood/stone/gold/militia_hre=200000`) in `army_bag` |
+| 2a/2b | `instances/army/standard_mode/normal_<civ>.xml` | 25 | Pop cap (`max_personnel_cap=1000`) + storage caps (`food/wood/stone/gold/militia_hre=200000`) in `army_bag`. Vikings + Scots also `resource_max_cap/popcap=1000`; Vikings also `max_vehicle_cap=1000` |
 | 3 | `instances/ebps/gameplay/resources/gold/` | 3 | Gold piles → `initial_amount=50000` |
 | 3 | `instances/ebps/gameplay/resources/stone/` | 3 | Stone piles → 50000 |
-| 3 | `instances/ebps/gameplay/resources/food/` | 14 | Berries (8) + fish (6) → 50000 |
-| 3 | `instances/ebps/gaia/animals/` | 8 | Live boar/deer/reindeer/enchanted_stag + 4 sheep colors → 50000 |
+| 3 | `instances/ebps/gameplay/resources/food/` | 14 | Berries (8) + fish (6) → 50000. The 3 `_emi` fish have no own `initial_amount` and stay at base (1000 / 600 / 600 in the compiled mod) |
+| 3 | `instances/ebps/gaia/animals/` | 8 | Live boar/deer/reindeer + 4 sheep colors → 50000. Live enchanted_stag has no own `initial_amount` and stays at 350 (its corpse is 50000) |
 | 3 | `instances/ebps/environment/non_tree_resources/` | 8 | Animal corpses → 50000 |
 | 4 | `instances/ebps/races/core/buildings/` | 1 | Core TC override (defensive, not load-bearing) |
-| 4 | `instances/ebps/races/<civ>/buildings/building_town_center*.xml` | 49 | Per-civ TC overrides — villager `number_to_spawn=2` in default+xp3 variants |
+| 4 | `instances/ebps/races/<civ>/buildings/building_town_center*.xml` | 53 | Per-civ TC overrides — villager `number_to_spawn=2` in default+xp3 variants |
+
+### 17.0 update (2026-10-30)
+- Added Vikings (`_vik`, replacing-style TCs) and Scots (`_sco`, merging-style TCs): 2 army files + 4 TC files.
+- 36 override files that had gone stale were refreshed from 17.0 reference data, re-applying only Big Poppa's edits.
+- Full record: `docs/FINDINGS.md` at the repo root.
 
 ### Phase 4 special cases
 - **Jin Dynasty** has a 4th spawn_item: `unit_mounted_villager_1_jin`. Also patched to 2.
+- **Golden Horde** villagers are already 2 in the base game; Big Poppa also sets the scout (`unit_scout_1_mon_ha_gol`) to 2. Kept on purpose.
+- **Tughlaq** TCs train 2 villagers; worker elephants stay at the base game value (1).
+- **`villager_free_*`** spawns (free-villager events) stay at 1.
 - **Mongol** has 5 TC files: `mon`, `capital_mon`, `moving_mon`, `capital_moving_mon`, `dummy_start`. Only `mon` and `capital_mon` train villagers; the moving/dummy files have no villager spawn_items and are verbatim copies (kept for defensive parity with the working reference mod).
-- **xp3 variant villager** is patched on every TC where the variant exists explicitly in source (6 of the 27 merging civs have xp3 blocks; the rest inherit from core which is also patched). For the 22 replacing civs, xp3 patched if present in source. Empire Wars (xp3) pop cap is buffed.
+- **xp3 variant villager** is patched on every TC where the variant exists explicitly in source; elsewhere the xp3 villager count comes from inheritance. Army files have no xp3 block, so the default pop cap edit is expected to cover Empire Wars. Neither is tested in game.
 - **Campaign variant** intentionally NOT patched in any phase — campaign games stay at base game values.
 - **Cordoba variant** (event mode) NOT patched.
 

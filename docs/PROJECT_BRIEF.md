@@ -5,7 +5,7 @@
 - Kev made an AoE4 mod called **Big Poppa**. It's published and currently installed (subscribed) in his game on Steam.
 - On **Oct 29, 2026** the *Raiders of the North* expansion (game update 17.0) added two new civs: **Vikings** and **Scots**.
 - Big Poppa was built before those civs existed, so they don't get the mod's changes. They play like normal.
-- Kev **lost the original project files** (the editable source). All we have for sure is the compiled mod the game downloaded.
+- Kev **lost the original project files** (the editable source). All we have for sure is the compiled mod the game downloaded. *(Later found in Phase 1: the project was intact in OneDrive Documents. It is the `mod/` folder of this repo.)*
 
 ## The goal
 

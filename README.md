@@ -10,7 +10,7 @@ Get it in game: **Mods → Browse → search "Big Poppa"**.
 |---|---|
 | Population cap | 200 → **1000** (Vikings' separate villager limit is also 1000) |
 | Food / wood / stone / gold storage cap | 100,000 → **200,000** |
-| Gold, stone, berries, fish, huntable/herdable animals | **50,000** per pile |
+| Gold, stone, berries, fish, huntable/herdable animals | **50,000** per pile (except 3 special fish variants and the live enchanted stag; see `mod/README.md`) |
 | Villagers per Town Center train | 1 → **2** (standard and Empire Wars) |
 
 Unchanged: trees, farms, gather rates, house pop (+10), starting resources, and campaign data.
@@ -20,8 +20,9 @@ Known quirk: the Golden Horde also trains 2 scouts at a time.
 
 ```
 mod/      Content Editor project. Open mod/BigPoppa.aoe4mod in the AoE4 Content Editor and click Build.
-          (mod/README.md and mod/CLAUDE.md are the original May 2026 notes, written when the mod covered 23 civs.)
-docs/     Research, plan and findings from the 17.0 update (Vikings + Scots).
+          mod/README.md has the full change list.
+docs/     Working log of the 17.0 update (Vikings + Scots): research, plan and findings, written as the work happened.
+          FINDINGS.md is the record of what was actually done.
 tools/    Python helpers that apply and verify Big Poppa's edits against the game's reference data.
 ```
 
