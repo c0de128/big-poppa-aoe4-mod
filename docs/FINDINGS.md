@@ -265,6 +265,15 @@ Only the 4 TC files train villagers. I searched every Vikings/Scots building for
   - Against the tested 12:38 build, the only changed file is `info/mod.rrtex` (the cover). Pop values, data and description are byte-for-byte the same.
 - The BigPoppa build is unchanged (`9402119f8ef84ac6...`).
 
+## Phase 10: Both published; GitHub updated (2026-10-30)
+- **BIG POPPA 500** is published as a new listing, **#562254**. The download in `subscriptions\562254\BIG_POPPA_500.sga` is byte-identical to the verified 13:11 build (`c02e00bd...`).
+- **BIG POPPA** (#503437): Kev reports it was published. At the time of checking, the subscribed copy on this PC was still the 12:06 version (`bc0c1deab...`), not the 12:34 build (`9402119f...`). Re-check after the game syncs.
+- **GitHub** (commit `9098ed6`):
+  - `mod/` was synced with the live BigPoppa project (23 army files: popcap 1000).
+  - Added `mod-500/` with the BIG POPPA 500 project, assets only.
+  - Updated the READMEs and notes, and refreshed `docs/` (with personal paths replaced by placeholders).
+  - Personal info scan: 0 hits.
+
 ## Decisions log
 | Date | Decision | Why |
 |---|---|---|
