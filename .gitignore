@@ -1,0 +1,5 @@
+archives/
+cache/
+.aoe4/
+*.sga
+__pycache__/

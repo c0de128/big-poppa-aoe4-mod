@@ -1,0 +1,727 @@
+<instance version="6" description="" template="army">
+	<group name="army_bag">
+		<group name="actions">
+			<string name="ability_ally_reinforcement_action_name" value="UI/command/coh2_troop_deployment_flag" />
+			<string name="ability_self_reinforcement_action_name" value="UI/command/coh2_troop_deployment_flag" />
+			<string name="ally_attack_here_action_name" value="UI/coh2_team_attack_here" />
+			<string name="ally_capture_here_action_name" value="UI/coh2_team_capture_here" />
+			<string name="ally_defend_here_action_name" value="UI/coh2_team_defend_here" />
+			<string name="fx_rally_point_action_name" value="ui/command/rally_point_order_loop" />
+			<string name="self_attack_here_action_name" value="" />
+			<string name="self_capture_here_action_name" value="" />
+			<string name="self_defend_here_action_name" value="" />
+			<string name="self_question_here_action_name" value="" />
+			<string name="ally_question_here_action_name" value="UI/coh2_team_question_here" />
+			<colour name="fx_rally_point_line_color_move" value="4293767680" />
+			<colour name="fx_rally_point_line_color_special" value="4285313770" />
+			<string name="fx_rally_point_action_name_special" value="ui/command/rally_point_order_loop_square" />
+			<string name="fx_rally_point_action_name_attack" value="ui/command/rally_point_order_loop_red" />
+			<colour name="fx_rally_point_line_color_attack" value="4294918455" />
+		</group>
+		<group name="casualties">
+			<float name="guaranteed_casualty_per_number_of_deaths" value="5" />
+			<int name="max_rescued_casualty_count" value="100" />
+		</group>
+		<enum_table name="resource_income_cap">
+			<float name="action" value="20" />
+			<float name="popcap" value="3.402823E+38" />
+			<float name="command" value="3.402823E+38" />
+			<float name="food" value="3.402823E+38" />
+			<float name="wood" value="3.402823E+38" />
+			<float name="stone" value="3.402823E+38" />
+			<float name="gold" value="3.402823E+38" />
+			<float name="militia_hre" value="0" />
+			<float name="merc_byz" value="0" />
+		</enum_table>
+		<group name="race_population_cap_table">
+			<float name="base_medic_cap" value="0" />
+			<float name="base_personnel_cap" value="0" />
+			<float name="base_vehicle_cap" value="0" />
+			<float name="max_medic_cap" value="0" />
+			<float name="max_personnel_cap" value="1000" />
+			<float name="max_vehicle_cap" value="0" />
+		</group>
+		<list name="abilities">
+		</list>
+		<enum_table name="resource_max_cap">
+			<float name="action" value="-1" />
+			<float name="popcap" value="200" />
+			<float name="command" value="10" />
+			<float name="food" value="200000" />
+			<float name="wood" value="200000" />
+			<float name="stone" value="200000" />
+			<float name="gold" value="200000" />
+			<float name="militia_hre" value="200000" />
+			<float name="merc_byz" value="0" />
+		</enum_table>
+		<string name="badge_path" value="DATA:\art\armies\west_german\badges\default_dif" />
+		<list name="production_buildings">
+		</list>
+		<group name="ai_production_info">
+			<list name="unlocking_upgrade_list">
+				<group name="unlocking_upgrade_info" List.ItemID="-425517310">
+					<instance_reference name="upgrade_pbg" value="upgrade\races\english\units\upgrade_unit_manatarms_2_eng" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+						<instance_reference name="upgraded_squad" value="sbps\races\english\unit_manatarms_1_eng" List.ItemID="778588096" />
+						<instance_reference name="upgraded_squad" value="sbps\races\core\unit_manatarms_1" List.ItemID="1131824833" />
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info" List.ItemID="-1459580569">
+					<instance_reference name="upgrade_pbg" value="upgrade\races\english\units\upgrade_unit_manatarms_3_eng" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+						<instance_reference name="upgraded_squad" value="sbps\races\english\unit_manatarms_2_eng" List.ItemID="1346108843" />
+						<instance_reference name="upgraded_squad" value="sbps\races\core\unit_manatarms_2" List.ItemID="-719169786" />
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info" List.ItemID="-1772346021">
+					<instance_reference name="upgrade_pbg" value="upgrade\races\english\units\upgrade_unit_manatarms_4_eng" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+						<instance_reference name="upgraded_squad" value="sbps\races\english\unit_manatarms_3_eng" List.ItemID="1197966672" />
+						<instance_reference name="upgraded_squad" value="sbps\races\core\unit_manatarms_3" List.ItemID="-1051220307" />
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info" List.ItemID="-548728230">
+					<instance_reference name="upgrade_pbg" value="upgrade\races\english\units\upgrade_unit_archer_3_eng" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+						<instance_reference name="upgraded_squad" value="sbps\races\english\unit_archer_2_eng" List.ItemID="2104762228" />
+						<instance_reference name="upgraded_squad" value="sbps\races\core\unit_archer_2" List.ItemID="1948580975" />
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info" List.ItemID="1721343192">
+					<instance_reference name="upgrade_pbg" value="upgrade\races\english\units\upgrade_unit_archer_4_eng" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+						<instance_reference name="upgraded_squad" value="sbps\races\english\unit_archer_3_eng" List.ItemID="1722010269" />
+						<instance_reference name="upgraded_squad" value="sbps\races\core\unit_archer_3" List.ItemID="1693004933" />
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info" List.ItemID="451591560">
+					<instance_reference name="upgrade_pbg" value="upgrade\races\common\units\upgrade_unit_horseman_3" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+						<instance_reference name="upgraded_squad" value="sbps\races\english\unit_horseman_2_eng" List.ItemID="584489267" />
+						<instance_reference name="upgraded_squad" value="sbps\races\french\unit_horseman_2_fre" List.ItemID="1468198301" />
+						<instance_reference name="upgraded_squad" value="sbps\races\rus\unit_horseman_2_rus" List.ItemID="616578818" />
+						<instance_reference name="upgraded_squad" value="sbps\races\hre\unit_horseman_2_hre" List.ItemID="-981945699" />
+						<instance_reference name="upgraded_squad" value="sbps\races\mongol\unit_horseman_2_mon" List.ItemID="129425022" />
+						<instance_reference name="upgraded_squad" value="sbps\races\core\unit_horseman_2" List.ItemID="933537897" />
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info" List.ItemID="1352434830">
+					<instance_reference name="upgrade_pbg" value="upgrade\races\common\units\upgrade_unit_horseman_4" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+						<instance_reference name="upgraded_squad" value="sbps\races\english\unit_horseman_3_eng" List.ItemID="-2018428368" />
+						<instance_reference name="upgraded_squad" value="sbps\races\french\unit_horseman_3_fre" List.ItemID="-1494632277" />
+						<instance_reference name="upgraded_squad" value="sbps\races\rus\unit_horseman_3_rus" List.ItemID="438444847" />
+						<instance_reference name="upgraded_squad" value="sbps\races\hre\unit_horseman_3_hre" List.ItemID="519666881" />
+						<instance_reference name="upgraded_squad" value="sbps\races\mongol\unit_horseman_3_mon" List.ItemID="-236026800" />
+						<instance_reference name="upgraded_squad" value="sbps\races\core\unit_horseman_3" List.ItemID="-424381245" />
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info" List.ItemID="1272198128">
+					<instance_reference name="upgrade_pbg" value="upgrade\races\english\units\upgrade_unit_spearman_3_eng" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+						<instance_reference name="upgraded_squad" value="sbps\races\english\unit_spearman_2_eng" List.ItemID="555364867" />
+						<instance_reference name="upgraded_squad" value="sbps\races\core\unit_spearman_2" List.ItemID="-293384416" />
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info" List.ItemID="-1670023910">
+					<instance_reference name="upgrade_pbg" value="upgrade\races\english\units\upgrade_unit_spearman_4_eng" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+						<instance_reference name="upgraded_squad" value="sbps\races\english\unit_spearman_3_eng" List.ItemID="372250961" />
+						<instance_reference name="upgraded_squad" value="sbps\races\core\unit_spearman_3" List.ItemID="579507333" />
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info" List.ItemID="767970103">
+					<instance_reference name="upgrade_pbg" value="upgrade\races\common\units\upgrade_unit_knight_4" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+						<instance_reference name="upgraded_squad" value="sbps\races\english\unit_knight_3_eng" List.ItemID="-446188105" />
+						<instance_reference name="upgraded_squad" value="sbps\races\core\unit_knight_3" List.ItemID="620771004" />
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info" List.ItemID="1491440287">
+					<instance_reference name="upgrade_pbg" value="upgrade\races\common\units\upgrade_unit_crossbowman_4" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+						<instance_reference name="upgraded_squad" value="sbps\races\english\unit_crossbowman_3_eng" List.ItemID="-164785905" />
+						<instance_reference name="upgraded_squad" value="sbps\races\core\unit_crossbowman_3" List.ItemID="-2039117453" />
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info" List.ItemID="-973768711">
+					<instance_reference name="upgrade_pbg" value="upgrade\races\common\research\economy\upgrade_econ_resource_food_harvest_rate_2" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+						<instance_reference name="upgraded_squad" value="sbps\races\english\unit_villager_1_eng" List.ItemID="116745741" />
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info" List.ItemID="342619333">
+					<instance_reference name="upgrade_pbg" value="upgrade\races\common\research\economy\upgrade_econ_resource_food_harvest_rate_3" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+						<instance_reference name="upgraded_squad" value="sbps\races\english\unit_villager_1_eng" List.ItemID="940060946" />
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info" List.ItemID="-1637423273">
+					<instance_reference name="upgrade_pbg" value="upgrade\races\common\research\economy\upgrade_econ_resource_food_harvest_rate_4" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+						<instance_reference name="upgraded_squad" value="sbps\races\english\unit_villager_1_eng" List.ItemID="-1737260916" />
+					</list>
+				</group>
+			</list>
+			<list name="loadouts">
+			</list>
+		</group>
+		<list name="team_size_point_resource_multiplier">
+		</list>
+		<list name="starting_buildings">
+			<group name="starting_building" List.ItemID="2020698328">
+				<string name="key" value="default_mp" />
+				<instance_reference name="building" value="ebps\races\english\buildings\building_town_center_burh_eng\building_town_center_capital_eng" />
+				<list name="player_upgrades">
+				</list>
+			</group>
+		</list>
+		<list name="field_support_production_styles">
+		</list>
+		<enum_table name="resource_starting_amount">
+			<float name="action" value="0" />
+			<float name="command" value="0" />
+			<float name="popcap" value="0" />
+			<float name="food" value="200" />
+			<float name="wood" value="200" />
+			<float name="stone" value="0" />
+			<float name="gold" value="100" />
+			<float name="militia_hre" value="0" />
+			<float name="merc_byz" value="0" />
+		</enum_table>
+		<state_tree_node name="start_actions_statetree" value="civ_start\English" />
+		<list name="upgrades">
+		</list>
+		<group name="ui">
+			<list name="global_traits_summary">
+				<group name="trait" comment="Civilization Bonuses" List.ItemID="-224298171">
+					<locstring name="title" value="11197922" />
+					<locstring name="description" value="0" />
+					<file name="icon" value="civ\civ_icon_small_britons" />
+					<template_reference name="description_formatter" value="ui_text_formatter">
+						<list name="formatter_arguments">
+							<int name="int_value" value="20" List.ItemID="739295060" />
+							<int name="int_value" value="20" List.ItemID="-1287866929" />
+							<int name="int_value" value="25" List.ItemID="-1117997699" />
+							<int name="int_value" value="30" List.ItemID="-2031322866" />
+							<int name="int_value" value="30" List.ItemID="-1485497799" />
+							<int name="int_value" value="40" List.ItemID="1231519767" />
+							<int name="int_value" value="10" List.ItemID="-1050038388" />
+							<int name="int_value" value="50" List.ItemID="-1358764886" />
+							<int name="int_value" value="10" List.ItemID="1864207541" />
+						</list>
+						<locstring name="formatter" value="11271429" />
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Network of Castles" List.ItemID="-245413559">
+					<locstring name="title" value="11155021" />
+					<locstring name="description" value="0" />
+					<file name="icon" value="races\english\abilities\network_of_castles" />
+					<template_reference name="description_formatter" value="ui_text_formatter">
+						<list name="formatter_arguments">
+							<int name="int_value" value="20" List.ItemID="825058129" />
+							<int name="int_value" value="30" List.ItemID="1307649376" />
+						</list>
+						<locstring name="formatter" value="11227173" />
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Keep Production" List.ItemID="-1056108729">
+					<locstring name="title" value="11217399" />
+					<locstring name="description" value="11217400" />
+					<file name="icon" value="races\english\upgrades\keep_production" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Call to Arms" List.ItemID="1053793812">
+					<locstring name="title" value="11227185" />
+					<locstring name="description" value="0" />
+					<file name="icon" value="races\common\units\manatarms" />
+					<template_reference name="description_formatter" value="ui_text_formatter">
+						<list name="formatter_arguments">
+							<int name="int_value" value="40" List.ItemID="1835980165" />
+						</list>
+						<locstring name="formatter" value="11227184" />
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Defensive Byrig" List.ItemID="445475347">
+					<locstring name="title" value="11164788" />
+					<locstring name="description" value="11227175" />
+					<file name="icon" value="races\common\buildings\town_center" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Island of Agriculture" List.ItemID="-967372934">
+					<locstring name="title" value="11155025" />
+					<locstring name="description" value="11227176" />
+					<file name="icon" value="races\common\buildings\wheat_field" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Shipwrights" List.ItemID="-1878440299">
+					<locstring name="title" value="11227177" />
+					<locstring name="description" value="11227178" />
+					<file name="icon" value="races\common\buildings\dock" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Influence" List.ItemID="-233879088">
+					<locstring name="title" value="11197923" />
+					<locstring name="description" value="0" />
+					<file name="icon" value="races\common\buildings\gristmill" />
+					<template_reference name="description_formatter" value="ui_text_formatter">
+						<list name="formatter_arguments">
+							<int name="int_value" value="20" List.ItemID="2041124529" />
+							<int name="int_value" value="25" List.ItemID="856525252" />
+							<int name="int_value" value="30" List.ItemID="91049720" />
+							<int name="int_value" value="30" List.ItemID="-1294031701" />
+						</list>
+						<locstring name="formatter" value="11227180" />
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Campfire Ability" List.ItemID="1141443814">
+					<locstring name="title" value="11271430" />
+					<locstring name="description" value="0" />
+					<file name="icon" value="races\english\abilities\set_up_camp" />
+					<template_reference name="description_formatter" value="ui_text_formatter">
+						<list name="formatter_arguments">
+							<int name="int_value" value="30" List.ItemID="487958098" />
+							<int name="int_value" value="10" List.ItemID="-41504414" />
+						</list>
+						<locstring name="formatter" value="11271428" />
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Unique Unit" List.ItemID="375065204">
+					<locstring name="title" value="11155027" />
+					<locstring name="description" value="11227181" />
+					<file name="icon" value="races\english\units\archer_2" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="True" />
+				</group>
+			</list>
+			<locstring name="subheader" value="11155020" />
+			<locstring name="one_liner" value="11217954" />
+			<file name="background_image" value="civ_flags\flag_english" />
+			<int name="difficulty" value="1" />
+			<enum name="research_upgrade" value="english_upgrade" />
+		</group>
+		<bool name="check_pop_cap_when_queuing_production_item" value="False" />
+		<enum_table name="upkeep_per_pop_per_minute_override">
+			<float name="action" value="0" />
+			<float name="command" value="0" />
+			<float name="popcap" value="0" />
+			<float name="food" value="0" />
+			<float name="wood" value="0" />
+			<float name="stone" value="0" />
+			<float name="gold" value="0" />
+			<float name="militia_hre" value="0" />
+			<float name="merc_byz" value="0" />
+		</enum_table>
+		<list name="starting_units">
+			<instance_reference name="squad" value="sbps\races\english\unit_scout_1_eng" List.ItemID="1896482964" />
+			<instance_reference name="squad" value="sbps\races\english\unit_villager_1_eng" List.ItemID="-12400193" />
+			<instance_reference name="squad" value="sbps\races\english\unit_villager_1_eng" List.ItemID="2009522997" />
+			<instance_reference name="squad" value="sbps\races\english\unit_villager_1_eng" List.ItemID="-1830307025" />
+			<instance_reference name="squad" value="sbps\races\english\unit_villager_1_eng" List.ItemID="-564455583" />
+			<instance_reference name="squad" value="sbps\races\english\unit_villager_1_eng" List.ItemID="-903286318" />
+			<instance_reference name="squad" value="sbps\races\english\unit_villager_1_eng" List.ItemID="-1581357520" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep" List.ItemID="-191130092" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep" List.ItemID="628396438" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep_black" List.ItemID="-169397510" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep_brown" List.ItemID="1372936532" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep_brown" List.ItemID="-1241529547" />
+		</list>
+		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
+			<list name="spawn_positions">
+				<group name="position_offset" List.ItemID="1838495348">
+					<float name="x" value="-4" />
+					<float name="y" value="10" />
+				</group>
+				<group name="position_offset" List.ItemID="1057104515">
+					<float name="x" value="-2.2" />
+					<float name="y" value="0" />
+				</group>
+				<group name="position_offset" List.ItemID="-219612349">
+					<float name="x" value="-3.3" />
+					<float name="y" value="-2" />
+				</group>
+				<group name="position_offset" List.ItemID="-187275359">
+					<float name="x" value="-1" />
+					<float name="y" value="-2" />
+				</group>
+				<group name="position_offset" List.ItemID="1516328388">
+					<float name="x" value="-2" />
+					<float name="y" value="-4" />
+				</group>
+				<group name="position_offset" List.ItemID="1983898149">
+					<float name="x" value="0" />
+					<float name="y" value="-4" />
+				</group>
+				<group name="position_offset" List.ItemID="-972811346">
+					<float name="x" value="-1" />
+					<float name="y" value="-6" />
+				</group>
+				<group name="position_offset" List.ItemID="-684833343">
+					<float name="x" value="0" />
+					<float name="y" value="1.5" />
+				</group>
+				<group name="position_offset" List.ItemID="1682083217">
+					<float name="x" value="0.4" />
+					<float name="y" value="1.8" />
+				</group>
+				<group name="position_offset" List.ItemID="-368196780">
+					<float name="x" value="0.8" />
+					<float name="y" value="2.1" />
+				</group>
+				<group name="position_offset" List.ItemID="850254598">
+					<float name="x" value="0.8" />
+					<float name="y" value="2.4" />
+				</group>
+				<group name="position_offset" List.ItemID="-1676026088">
+					<float name="x" value="1.2" />
+					<float name="y" value="2.4" />
+				</group>
+			</list>
+		</template_reference>
+		<instance_reference name="starting_town" value="" />
+	</group>
+	<uniqueid name="pbgid" value="2127438" />
+	<instance_reference name="parent_pbg" value="" />
+	<variant name="campaign">
+		<group name="army_bag">
+			<group name="actions">
+				<string name="ability_ally_reinforcement_action_name" value="UI/command/coh2_troop_deployment_flag" />
+				<string name="ability_self_reinforcement_action_name" value="UI/command/coh2_troop_deployment_flag" />
+				<string name="ally_attack_here_action_name" value="UI/coh2_team_attack_here" />
+				<string name="ally_capture_here_action_name" value="UI/coh2_team_capture_here" />
+				<string name="ally_defend_here_action_name" value="UI/coh2_team_defend_here" />
+				<string name="fx_rally_point_action_name" value="ui/command/rally_point_order_loop" />
+				<string name="self_attack_here_action_name" value="" />
+				<string name="self_capture_here_action_name" value="" />
+				<string name="self_defend_here_action_name" value="" />
+				<string name="self_question_here_action_name" value="" />
+				<string name="ally_question_here_action_name" value="UI/coh2_team_question_here" />
+				<colour name="fx_rally_point_line_color_move" value="4293767680" />
+				<colour name="fx_rally_point_line_color_special" value="4285313770" />
+				<string name="fx_rally_point_action_name_special" value="ui/command/rally_point_order_loop_square" />
+				<string name="fx_rally_point_action_name_attack" value="ui/command/rally_point_order_loop_red" />
+				<colour name="fx_rally_point_line_color_attack" value="4294918455" />
+			</group>
+			<group name="casualties">
+				<float name="guaranteed_casualty_per_number_of_deaths" value="5" />
+				<int name="max_rescued_casualty_count" value="100" />
+			</group>
+			<enum_table name="resource_income_cap">
+				<float name="action" value="20" />
+				<float name="popcap" value="3.402823E+38" />
+				<float name="command" value="3.402823E+38" />
+				<float name="food" value="3.402823E+38" />
+				<float name="wood" value="3.402823E+38" />
+				<float name="stone" value="3.402823E+38" />
+				<float name="gold" value="3.402823E+38" />
+				<float name="militia_hre" value="0" />
+				<float name="merc_byz" value="0" />
+			</enum_table>
+			<group name="race_population_cap_table">
+				<float name="base_medic_cap" value="0" />
+				<float name="base_personnel_cap" value="0" />
+				<float name="base_vehicle_cap" value="0" />
+				<float name="max_medic_cap" value="0" />
+				<float name="max_personnel_cap" value="200" />
+				<float name="max_vehicle_cap" value="0" />
+			</group>
+			<list name="abilities">
+			</list>
+			<enum_table name="resource_max_cap">
+				<float name="action" value="-1" />
+				<float name="popcap" value="200" />
+				<float name="command" value="10" />
+				<float name="food" value="200000" />
+				<float name="wood" value="200000" />
+				<float name="stone" value="200000" />
+				<float name="gold" value="200000" />
+				<float name="militia_hre" value="0" />
+				<float name="merc_byz" value="0" />
+			</enum_table>
+			<string name="badge_path" value="DATA:\art\armies\west_german\badges\default_dif" />
+			<list name="production_buildings">
+			</list>
+			<group name="ai_production_info">
+				<list name="unlocking_upgrade_list">
+					<group name="unlocking_upgrade_info" List.ItemID="-717343763">
+						<instance_reference name="upgrade_pbg" value="upgrade\races\english\units\upgrade_unit_manatarms_2_eng" />
+						<instance_reference name="unlocked_ability" value="" />
+						<instance_reference name="unlocked_building" value="" />
+						<list name="upgraded_squads">
+							<instance_reference name="upgraded_squad" value="sbps\races\english\unit_manatarms_1_eng" List.ItemID="-2067934483" />
+							<instance_reference name="upgraded_squad" value="sbps\races\core\unit_manatarms_1" List.ItemID="510034068" />
+						</list>
+					</group>
+					<group name="unlocking_upgrade_info" List.ItemID="-1474225974">
+						<instance_reference name="upgrade_pbg" value="upgrade\races\english\units\upgrade_unit_manatarms_3_eng" />
+						<instance_reference name="unlocked_ability" value="" />
+						<instance_reference name="unlocked_building" value="" />
+						<list name="upgraded_squads">
+							<instance_reference name="upgraded_squad" value="sbps\races\english\unit_manatarms_2_eng" List.ItemID="1925284932" />
+							<instance_reference name="upgraded_squad" value="sbps\races\core\unit_manatarms_2" List.ItemID="813044922" />
+						</list>
+					</group>
+					<group name="unlocking_upgrade_info" List.ItemID="1846874745">
+						<instance_reference name="upgrade_pbg" value="upgrade\races\english\units\upgrade_unit_manatarms_4_eng" />
+						<instance_reference name="unlocked_ability" value="" />
+						<instance_reference name="unlocked_building" value="" />
+						<list name="upgraded_squads">
+							<instance_reference name="upgraded_squad" value="sbps\races\english\unit_manatarms_3_eng" List.ItemID="-850709992" />
+							<instance_reference name="upgraded_squad" value="sbps\races\core\unit_manatarms_3" List.ItemID="-1713667328" />
+						</list>
+					</group>
+					<group name="unlocking_upgrade_info" List.ItemID="-1478606662">
+						<instance_reference name="upgrade_pbg" value="upgrade\races\english\units\upgrade_unit_archer_3_eng" />
+						<instance_reference name="unlocked_ability" value="" />
+						<instance_reference name="unlocked_building" value="" />
+						<list name="upgraded_squads">
+							<instance_reference name="upgraded_squad" value="sbps\races\english\unit_archer_2_eng" List.ItemID="-1875009512" />
+							<instance_reference name="upgraded_squad" value="sbps\races\core\unit_archer_2" List.ItemID="-1914216009" />
+						</list>
+					</group>
+					<group name="unlocking_upgrade_info" List.ItemID="-1353664378">
+						<instance_reference name="upgrade_pbg" value="upgrade\races\english\units\upgrade_unit_archer_4_eng" />
+						<instance_reference name="unlocked_ability" value="" />
+						<instance_reference name="unlocked_building" value="" />
+						<list name="upgraded_squads">
+							<instance_reference name="upgraded_squad" value="sbps\races\english\unit_archer_3_eng" List.ItemID="11957894" />
+							<instance_reference name="upgraded_squad" value="sbps\races\core\unit_archer_3" List.ItemID="-1557150193" />
+						</list>
+					</group>
+					<group name="unlocking_upgrade_info" List.ItemID="438963137">
+						<instance_reference name="upgrade_pbg" value="upgrade\races\common\units\upgrade_unit_horseman_3" />
+						<instance_reference name="unlocked_ability" value="" />
+						<instance_reference name="unlocked_building" value="" />
+						<list name="upgraded_squads">
+							<instance_reference name="upgraded_squad" value="sbps\races\english\unit_horseman_2_eng" List.ItemID="1611444690" />
+							<instance_reference name="upgraded_squad" value="sbps\races\french\unit_horseman_2_fre" List.ItemID="-441284192" />
+							<instance_reference name="upgraded_squad" value="sbps\races\rus\unit_horseman_2_rus" List.ItemID="-1592972176" />
+							<instance_reference name="upgraded_squad" value="sbps\races\hre\unit_horseman_2_hre" List.ItemID="-373273873" />
+							<instance_reference name="upgraded_squad" value="sbps\races\mongol\unit_horseman_2_mon" List.ItemID="887818046" />
+							<instance_reference name="upgraded_squad" value="sbps\races\core\unit_horseman_2" List.ItemID="-1976551282" />
+						</list>
+					</group>
+					<group name="unlocking_upgrade_info" List.ItemID="-341235862">
+						<instance_reference name="upgrade_pbg" value="upgrade\races\common\units\upgrade_unit_horseman_4" />
+						<instance_reference name="unlocked_ability" value="" />
+						<instance_reference name="unlocked_building" value="" />
+						<list name="upgraded_squads">
+							<instance_reference name="upgraded_squad" value="sbps\races\english\unit_horseman_3_eng" List.ItemID="-194705525" />
+							<instance_reference name="upgraded_squad" value="sbps\races\french\unit_horseman_3_fre" List.ItemID="-416268460" />
+							<instance_reference name="upgraded_squad" value="sbps\races\rus\unit_horseman_3_rus" List.ItemID="1411341867" />
+							<instance_reference name="upgraded_squad" value="sbps\races\hre\unit_horseman_3_hre" List.ItemID="-449739346" />
+							<instance_reference name="upgraded_squad" value="sbps\races\mongol\unit_horseman_3_mon" List.ItemID="1254449998" />
+							<instance_reference name="upgraded_squad" value="sbps\races\core\unit_horseman_3" List.ItemID="646721435" />
+						</list>
+					</group>
+					<group name="unlocking_upgrade_info" List.ItemID="-1977431734">
+						<instance_reference name="upgrade_pbg" value="upgrade\races\english\units\upgrade_unit_spearman_3_eng" />
+						<instance_reference name="unlocked_ability" value="" />
+						<instance_reference name="unlocked_building" value="" />
+						<list name="upgraded_squads">
+							<instance_reference name="upgraded_squad" value="sbps\races\english\unit_spearman_2_eng" List.ItemID="-1381334765" />
+							<instance_reference name="upgraded_squad" value="sbps\races\core\unit_spearman_2" List.ItemID="-1494599099" />
+						</list>
+					</group>
+					<group name="unlocking_upgrade_info" List.ItemID="743192792">
+						<instance_reference name="upgrade_pbg" value="upgrade\races\english\units\upgrade_unit_spearman_4_eng" />
+						<instance_reference name="unlocked_ability" value="" />
+						<instance_reference name="unlocked_building" value="" />
+						<list name="upgraded_squads">
+							<instance_reference name="upgraded_squad" value="sbps\races\english\unit_spearman_3_eng" List.ItemID="-752635518" />
+							<instance_reference name="upgraded_squad" value="sbps\races\core\unit_spearman_3" List.ItemID="2082475795" />
+						</list>
+					</group>
+					<group name="unlocking_upgrade_info" List.ItemID="-74545554">
+						<instance_reference name="upgrade_pbg" value="upgrade\races\common\units\upgrade_unit_knight_4" />
+						<instance_reference name="unlocked_ability" value="" />
+						<instance_reference name="unlocked_building" value="" />
+						<list name="upgraded_squads">
+							<instance_reference name="upgraded_squad" value="sbps\races\english\unit_knight_3_eng" List.ItemID="1425088416" />
+							<instance_reference name="upgraded_squad" value="sbps\races\core\unit_knight_3" List.ItemID="184504580" />
+						</list>
+					</group>
+					<group name="unlocking_upgrade_info" List.ItemID="611558724">
+						<instance_reference name="upgrade_pbg" value="upgrade\races\common\units\upgrade_unit_crossbowman_4" />
+						<instance_reference name="unlocked_ability" value="" />
+						<instance_reference name="unlocked_building" value="" />
+						<list name="upgraded_squads">
+							<instance_reference name="upgraded_squad" value="sbps\races\english\unit_crossbowman_3_eng" List.ItemID="-1300234809" />
+							<instance_reference name="upgraded_squad" value="sbps\races\core\unit_crossbowman_3" List.ItemID="1127413897" />
+						</list>
+					</group>
+				</list>
+				<list name="loadouts">
+				</list>
+			</group>
+			<list name="team_size_point_resource_multiplier">
+			</list>
+			<list name="starting_buildings">
+				<group name="starting_building" List.ItemID="-1764931372">
+					<string name="key" value="default_mp" />
+					<instance_reference name="building" value="ebps\races\english\buildings\building_town_center_burh_eng\building_town_center_capital_eng" />
+					<list name="player_upgrades">
+					</list>
+				</group>
+			</list>
+			<list name="field_support_production_styles">
+			</list>
+			<enum_table name="resource_starting_amount">
+				<float name="action" value="0" />
+				<float name="command" value="0" />
+				<float name="popcap" value="0" />
+				<float name="food" value="200" />
+				<float name="wood" value="300" />
+				<float name="stone" value="0" />
+				<float name="gold" value="300" />
+				<float name="militia_hre" value="0" />
+				<float name="merc_byz" value="0" />
+			</enum_table>
+			<state_tree_node name="start_actions_statetree" value="campaignMod_civ_start\English" />
+			<list name="upgrades">
+			</list>
+			<group name="ui">
+				<list name="global_traits_summary">
+					<group name="trait" comment="Network of Castles" List.ItemID="-1252740195">
+						<locstring name="title" value="11155021" />
+						<locstring name="description" value="11155022" />
+						<file name="icon" value="races\english\abilities\network_of_castles" />
+						<template_reference name="description_formatter" value="">
+						</template_reference>
+						<bool name="exclude_from_pc" value="False" />
+					</group>
+					<group name="trait" comment="Island of Agriculture" List.ItemID="19219383">
+						<locstring name="title" value="11155025" />
+						<locstring name="description" value="11155026" />
+						<file name="icon" value="races\common\buildings\wheat_field" />
+						<template_reference name="description_formatter" value="">
+						</template_reference>
+						<bool name="exclude_from_pc" value="False" />
+					</group>
+					<group name="trait" comment="Defensive Byrig" List.ItemID="-1852198339">
+						<locstring name="title" value="11164788" />
+						<locstring name="description" value="11164789" />
+						<file name="icon" value="races\common\buildings\town_center" />
+						<template_reference name="description_formatter" value="">
+						</template_reference>
+						<bool name="exclude_from_pc" value="False" />
+					</group>
+					<group name="trait" comment="Civilization Bonuses" List.ItemID="327606709">
+						<locstring name="title" value="11197922" />
+						<locstring name="description" value="11197924" />
+						<file name="icon" value="event_queue_high_priority_large" />
+						<template_reference name="description_formatter" value="">
+						</template_reference>
+						<bool name="exclude_from_pc" value="False" />
+					</group>
+					<group name="trait" comment="Influence" List.ItemID="-269417947">
+						<locstring name="title" value="11197923" />
+						<locstring name="description" value="11155028" />
+						<file name="icon" value="races\common\buildings\wheat_field" />
+						<template_reference name="description_formatter" value="">
+						</template_reference>
+						<bool name="exclude_from_pc" value="False" />
+					</group>
+				</list>
+				<locstring name="subheader" value="11155020" />
+				<locstring name="one_liner" value="11155029" />
+				<file name="background_image" value="civ_flags\flag_english" />
+				<int name="difficulty" value="1" />
+				<enum name="research_upgrade" value="english_upgrade" />
+			</group>
+			<bool name="check_pop_cap_when_queuing_production_item" value="False" />
+			<enum_table name="upkeep_per_pop_per_minute_override">
+				<float name="action" value="0" />
+				<float name="command" value="0" />
+				<float name="popcap" value="0" />
+				<float name="food" value="0" />
+				<float name="wood" value="0" />
+				<float name="stone" value="0" />
+				<float name="gold" value="0" />
+				<float name="militia_hre" value="0" />
+				<float name="merc_byz" value="0" />
+			</enum_table>
+			<list name="starting_units">
+				<instance_reference name="squad" value="sbps\races\english\unit_scout_1_eng" List.ItemID="308580431" />
+				<instance_reference name="squad" value="sbps\races\english\unit_villager_1_eng" List.ItemID="1344854707" />
+				<instance_reference name="squad" value="sbps\races\english\unit_villager_1_eng" List.ItemID="-1279488265" />
+				<instance_reference name="squad" value="sbps\races\english\unit_villager_1_eng" List.ItemID="505623407" />
+				<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep" List.ItemID="-1390141256" />
+				<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep" List.ItemID="1858150644" />
+			</list>
+			<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
+				<list name="spawn_positions">
+					<group name="position_offset" List.ItemID="-780542277">
+						<float name="x" value="-4" />
+						<float name="y" value="5" />
+					</group>
+					<group name="position_offset" List.ItemID="-1914725287">
+						<float name="x" value="-3" />
+						<float name="y" value="-1" />
+					</group>
+					<group name="position_offset" List.ItemID="-1277985310">
+						<float name="x" value="-1" />
+						<float name="y" value="-2" />
+					</group>
+					<group name="position_offset" List.ItemID="1750218642">
+						<float name="x" value="0" />
+						<float name="y" value="-4" />
+					</group>
+					<group name="position_offset" List.ItemID="-913113783">
+						<float name="x" value="0" />
+						<float name="y" value="0" />
+					</group>
+					<group name="position_offset" List.ItemID="-1725518763">
+						<float name="x" value="0" />
+						<float name="y" value="0" />
+					</group>
+				</list>
+			</template_reference>
+			<instance_reference name="starting_town" value="" />
+		</group>
+		<uniqueid name="pbgid" value="2127438" />
+		<instance_reference name="parent_pbg" value="" />
+	</variant>
+</instance>

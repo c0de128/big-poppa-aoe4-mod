@@ -1,0 +1,335 @@
+<instance version="4" description="" template="army">
+	<group name="army_bag">
+		<group name="actions">
+			<string name="ability_ally_reinforcement_action_name" value="UI/command/coh2_troop_deployment_flag" />
+			<string name="ability_self_reinforcement_action_name" value="UI/command/coh2_troop_deployment_flag" />
+			<string name="ally_attack_here_action_name" value="UI/coh2_team_attack_here" />
+			<string name="ally_capture_here_action_name" value="UI/coh2_team_capture_here" />
+			<string name="ally_defend_here_action_name" value="UI/coh2_team_defend_here" />
+			<string name="fx_rally_point_action_name" value="ui/command/rally_point_order_loop" />
+			<string name="self_attack_here_action_name" value="" />
+			<string name="self_capture_here_action_name" value="" />
+			<string name="self_defend_here_action_name" value="" />
+			<string name="self_question_here_action_name" value="" />
+			<string name="ally_question_here_action_name" value="UI/coh2_team_question_here" />
+			<colour name="fx_rally_point_line_color_move" value="4293767680" />
+			<colour name="fx_rally_point_line_color_special" value="4285313770" />
+			<string name="fx_rally_point_action_name_special" value="ui/command/rally_point_order_loop_square" />
+			<string name="fx_rally_point_action_name_attack" value="ui/command/rally_point_order_loop_red" />
+			<colour name="fx_rally_point_line_color_attack" value="4294918455" />
+		</group>
+		<group name="casualties">
+			<float name="guaranteed_casualty_per_number_of_deaths" value="5" />
+			<int name="max_rescued_casualty_count" value="100" />
+		</group>
+		<enum_table name="resource_income_cap">
+			<float name="action" value="20" />
+			<float name="popcap" value="3.402823E+38" />
+			<float name="command" value="3.402823E+38" />
+			<float name="food" value="3.402823E+38" />
+			<float name="wood" value="3.402823E+38" />
+			<float name="stone" value="3.402823E+38" />
+			<float name="gold" value="3.402823E+38" />
+			<float name="militia_hre" value="0" />
+			<float name="merc_byz" value="0" />
+		</enum_table>
+		<group name="race_population_cap_table">
+			<float name="base_medic_cap" value="0" />
+			<float name="base_personnel_cap" value="0" />
+			<float name="base_vehicle_cap" value="0" />
+			<float name="max_medic_cap" value="0" />
+			<float name="max_personnel_cap" value="1000" />
+			<float name="max_vehicle_cap" value="0" />
+		</group>
+		<list name="abilities">
+		</list>
+		<enum_table name="resource_max_cap">
+			<float name="action" value="-1" />
+			<float name="popcap" value="200" />
+			<float name="command" value="10" />
+			<float name="food" value="200000" />
+			<float name="wood" value="200000" />
+			<float name="stone" value="200000" />
+			<float name="gold" value="200000" />
+			<float name="militia_hre" value="200000" />
+			<float name="merc_byz" value="0" />
+		</enum_table>
+		<string name="badge_path" value="DATA:\art\armies\west_german\badges\default_dif" />
+		<list name="production_buildings">
+		</list>
+		<group name="ai_production_info">
+			<list name="unlocking_upgrade_list">
+				<group name="unlocking_upgrade_info" List.ItemID="733484535">
+					<instance_reference name="upgrade_pbg" value="upgrade\races\common\research\economy\upgrade_econ_resource_food_harvest_rate_2" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+						<instance_reference name="upgraded_squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" List.ItemID="949483223" />
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info" List.ItemID="-834898004">
+					<instance_reference name="upgrade_pbg" value="upgrade\races\common\research\economy\upgrade_econ_resource_food_harvest_rate_3" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+						<instance_reference name="upgraded_squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" List.ItemID="147877853" />
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info" List.ItemID="-1119435698">
+					<instance_reference name="upgrade_pbg" value="upgrade\races\common\research\economy\upgrade_econ_resource_food_harvest_rate_4" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+						<instance_reference name="upgraded_squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" List.ItemID="1876542165" />
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info" List.ItemID="675167810">
+					<instance_reference name="upgrade_pbg" value="upgrade\races\sultanate\research\economy\upgrade_econ_resource_food_harvest_rate_2_sul" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+						<instance_reference name="upgraded_squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" List.ItemID="-1947065678" />
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info" List.ItemID="-1604660840">
+					<instance_reference name="upgrade_pbg" value="upgrade\races\sultanate\research\economy\upgrade_econ_resource_food_harvest_rate_3_sul" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+						<instance_reference name="upgraded_squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" List.ItemID="210898901" />
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info" List.ItemID="-2138729896">
+					<instance_reference name="upgrade_pbg" value="upgrade\races\sultanate\research\economy\upgrade_econ_resource_food_harvest_rate_4_sul" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+						<instance_reference name="upgraded_squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" List.ItemID="428724586" />
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info" List.ItemID="858845597">
+					<instance_reference name="upgrade_pbg" value="upgrade\races\sultanate_ha_tug\research\economy\upgrade_econ_resource_harvest_dropoff_2_sul_ha_tug" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+						<instance_reference name="upgraded_squad" value="sbps\races\sultanate_ha_tug\unit_worker_elephant_2_sul_ha_tug" List.ItemID="-2026911786" />
+						<instance_reference name="upgraded_squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" List.ItemID="1776971035" />
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info" List.ItemID="1531514664">
+					<instance_reference name="upgrade_pbg" value="upgrade\races\sultanate_ha_tug\research\economy\upgrade_econ_resource_harvest_dropoff_3_sul_ha_tug" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+						<instance_reference name="upgraded_squad" value="sbps\races\sultanate_ha_tug\unit_worker_elephant_2_sul_ha_tug" List.ItemID="-2026911786" />
+						<instance_reference name="upgraded_squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" List.ItemID="313210107" />
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info" List.ItemID="272073550">
+					<instance_reference name="upgrade_pbg" value="upgrade\races\sultanate_ha_tug\research\economy\upgrade_econ_resource_harvest_dropoff_4_sul_ha_tug" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+						<instance_reference name="upgraded_squad" value="sbps\races\sultanate_ha_tug\unit_worker_elephant_2_sul_ha_tug" List.ItemID="-2026911786" />
+						<instance_reference name="upgraded_squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" List.ItemID="1386150437" />
+					</list>
+				</group>
+			</list>
+			<list name="loadouts">
+			</list>
+		</group>
+		<list name="team_size_point_resource_multiplier">
+		</list>
+		<list name="starting_buildings">
+			<group name="starting_building" List.ItemID="-926676685">
+				<string name="key" value="default_mp" />
+				<instance_reference name="building" value="ebps\races\sultanate_ha_tug\buildings\building_town_center_sul_ha_tug\building_town_center_capital_sul_ha_tug" />
+				<list name="player_upgrades">
+				</list>
+			</group>
+		</list>
+		<list name="field_support_production_styles">
+		</list>
+		<enum_table name="resource_starting_amount">
+			<float name="action" value="0" />
+			<float name="command" value="0" />
+			<float name="popcap" value="0" />
+			<float name="food" value="200" />
+			<float name="wood" value="150" />
+			<float name="stone" value="0" />
+			<float name="gold" value="100" />
+			<float name="militia_hre" value="0" />
+			<float name="merc_byz" value="0" />
+		</enum_table>
+		<state_tree_node name="start_actions_statetree" value="civ_start\Sultanates" />
+		<list name="upgrades">
+		</list>
+		<group name="ui">
+			<list name="global_traits_summary">
+				<group name="trait" comment="Civilization Bonuses" List.ItemID="1073417860">
+					<locstring name="title" value="11197946" />
+					<locstring name="description" value="11271278" />
+					<file name="icon" value="event_queue_high_priority_large" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Worker Elephants" List.ItemID="-1073213566">
+					<locstring name="title" value="11271275" />
+					<locstring name="description" value="11271267" />
+					<file name="icon" value="races\tughluq\units\worker_elephant" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Quick Researches" List.ItemID="-876553948">
+					<locstring name="title" value="11271516" />
+					<locstring name="description" value="11271268" />
+					<file name="icon" value="races\sultanate\abilities\scholar_research" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Forts" List.ItemID="870789682">
+					<locstring name="title" value="11271276" />
+					<locstring name="description" value="11271272" />
+					<file name="icon" value="races\tughluq\buildings\tughluqabad_fort" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Governors" List.ItemID="-630196726">
+					<locstring name="title" value="11271277" />
+					<locstring name="description" value="11271273" />
+					<file name="icon" value="races\tughluq\governor_portraits\governor" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Berry Bounty" List.ItemID="-656390800">
+					<locstring name="title" value="11271270" />
+					<locstring name="description" value="11271257" />
+					<file name="icon" value="gaia\berry_bush" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Frontier Fortifications" List.ItemID="1690398955">
+					<locstring name="title" value="11155076" />
+					<locstring name="description" value="11271584" />
+					<file name="icon" value="races\common\buildings\palisade_wall" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Defensive Deckhands" List.ItemID="575143189">
+					<locstring name="title" value="11227168" />
+					<locstring name="description" value="11227169" />
+					<file name="icon" value="races\common\units\fishing_boat" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Unique Units" List.ItemID="1562901059">
+					<locstring name="title" value="11155080" />
+					<locstring name="description" value="11271274" />
+					<file name="icon" value="event_queue_high_priority_large" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="True" />
+				</group>
+			</list>
+			<locstring name="subheader" value="11271279" />
+			<locstring name="one_liner" value="11271258" />
+			<file name="background_image" value="civ_flags\flag_tug" />
+			<int name="difficulty" value="2" />
+			<enum name="research_upgrade" value="sultanate_ha_tug_upgrade" />
+		</group>
+		<bool name="check_pop_cap_when_queuing_production_item" value="False" />
+		<enum_table name="upkeep_per_pop_per_minute_override">
+			<float name="action" value="0" />
+			<float name="command" value="0" />
+			<float name="popcap" value="0" />
+			<float name="food" value="0" />
+			<float name="wood" value="0" />
+			<float name="stone" value="0" />
+			<float name="gold" value="0" />
+			<float name="militia_hre" value="0" />
+			<float name="merc_byz" value="0" />
+		</enum_table>
+		<list name="starting_units">
+			<instance_reference name="squad" value="sbps\races\sultanate_ha_tug\unit_scout_1_sul_ha_tug" List.ItemID="388775954" />
+			<instance_reference name="squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" List.ItemID="-612339173" />
+			<instance_reference name="squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" List.ItemID="1578882423" />
+			<instance_reference name="squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" List.ItemID="977510936" />
+			<instance_reference name="squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" List.ItemID="1384563291" />
+			<instance_reference name="squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" List.ItemID="-1384090529" />
+			<instance_reference name="squad" value="sbps\races\sultanate_ha_tug\unit_villager_1_sul_ha_tug" List.ItemID="-1259111174" />
+			<instance_reference name="squad" value="sbps\races\sultanate_ha_tug\unit_worker_elephant_2_sul_ha_tug" List.ItemID="-1283316080" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep" List.ItemID="353783867" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep_black" List.ItemID="1800641865" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep_brown" List.ItemID="794722558" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep_brown" List.ItemID="1608592922" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep" List.ItemID="-672935259" />
+		</list>
+		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
+			<list name="spawn_positions">
+				<group name="position_offset" List.ItemID="1974834857">
+					<float name="x" value="-4" />
+					<float name="y" value="10" />
+				</group>
+				<group name="position_offset" List.ItemID="613790047">
+					<float name="x" value="-2.2" />
+					<float name="y" value="0" />
+				</group>
+				<group name="position_offset" List.ItemID="204787197">
+					<float name="x" value="-3.3" />
+					<float name="y" value="-2" />
+				</group>
+				<group name="position_offset" List.ItemID="-512711869">
+					<float name="x" value="-1" />
+					<float name="y" value="-2" />
+				</group>
+				<group name="position_offset" List.ItemID="-1255997141">
+					<float name="x" value="-2" />
+					<float name="y" value="-4" />
+				</group>
+				<group name="position_offset" List.ItemID="-2096195971">
+					<float name="x" value="0" />
+					<float name="y" value="-4" />
+				</group>
+				<group name="position_offset" List.ItemID="1882545862">
+					<float name="x" value="-1" />
+					<float name="y" value="-6" />
+				</group>
+				<group name="position_offset" List.ItemID="104088231">
+					<float name="x" value="-4" />
+					<float name="y" value="4" />
+				</group>
+				<group name="position_offset" List.ItemID="2057033591">
+					<float name="x" value="0.4" />
+					<float name="y" value="1.8" />
+				</group>
+				<group name="position_offset" List.ItemID="-1288142581">
+					<float name="x" value="0.8" />
+					<float name="y" value="2.1" />
+				</group>
+				<group name="position_offset" List.ItemID="1259325120">
+					<float name="x" value="0.8" />
+					<float name="y" value="2.1" />
+				</group>
+				<group name="position_offset" List.ItemID="-753544681">
+					<float name="x" value="1.2" />
+					<float name="y" value="2.4" />
+				</group>
+				<group name="position_offset" List.ItemID="1621258185">
+					<float name="x" value="1.5" />
+					<float name="y" value="2" />
+				</group>
+			</list>
+		</template_reference>
+		<instance_reference name="starting_town" value="" />
+	</group>
+	<uniqueid name="pbgid" value="9000861" />
+	<instance_reference name="parent_pbg" value="" />
+</instance>

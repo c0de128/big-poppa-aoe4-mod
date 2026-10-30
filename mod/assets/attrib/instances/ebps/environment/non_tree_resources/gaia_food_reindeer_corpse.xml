@@ -1,0 +1,31 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="580847355" List.ParentItemID="580847355">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\environment\non_tree_resources\gaia_food_reindeer_corpse" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="946373853" List.ParentItemID="946373853">
+			<float name="initial_amount" value="50000" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\animation_action_tree_ext" List.ItemID="-961399147" List.ParentItemID="-961399147">
+			<string name="default_animation" value="reaction\reindeer_death_pose_01" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="9005300" />
+	<instance_reference name="parent_pbg" value="ebps\environment\non_tree_resources\gaia_food_deer_corpse" />
+	<variant name="cordoba">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="580847355" List.ParentItemID="580847355">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\environment\non_tree_resources\gaia_food_reindeer_corpse" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="946373853" List.ParentItemID="946373853">
+				<float name="initial_amount" value="400" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\animation_action_tree_ext" List.ItemID="-961399147" List.ParentItemID="-961399147">
+				<state_tree_node name="ActionTree_OpeningBranch" value="cordoba_resource_root" overrideParent="True" />
+				<string name="default_animation" value="reaction\reindeer_death_pose_01" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="9005300" />
+		<instance_reference name="parent_pbg" value="ebps\environment\non_tree_resources\gaia_food_deer_corpse" />
+	</variant>
+</instance>

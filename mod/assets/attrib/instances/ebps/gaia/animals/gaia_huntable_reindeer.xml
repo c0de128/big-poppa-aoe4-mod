@@ -1,0 +1,22 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1869525707" List.ParentItemID="-1869525707">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\gaia\animals\gaia_huntable_reindeer" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="-468230349" List.ParentItemID="-468230349">
+			<list name="action_state_trees">
+				<group name="container" List.ItemID="2123010695" List.ParentItemID="2123010695">
+					<string name="state_tree" value="unit_action_apply\gaia\reindeer" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="-1623018241" List.ParentItemID="-1623018241">
+			<float name="rotation_rate" value="400" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\resource_deposit_ext" List.ItemID="1804863216" List.ParentItemID="1804863216">
+			<float name="initial_amount" value="50000" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="9005297" />
+	<instance_reference name="parent_pbg" value="ebps\gaia\animals\gaia_huntable_deer" />
+</instance>

@@ -1,0 +1,225 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions" comment="This object is a dummy entity in place of a &quot;starting building&quot; in the Mongol &quot;army&quot; instance. A null field causes issues. It should have no visuals.&#xD;&#xA;-Sept 2, 2020">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1168301653">
+			<file name="alternate_sua" value="" />
+			<bool name="always_revealed_in_fow" value="False" />
+			<bool name="is_visible_in_game" value="False" />
+			<int name="precise_size" value="-1" />
+			<enum name="default_spawn_type" value="" />
+			<instance_reference name="unit_badge" value="" />
+			<bool name="is_spawned_when_not_in_interactive_area" value="True" />
+			<bool name="is_wreck" value="False" />
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\_tech_art\_invisible_object" />
+			<float name="animator_scale" value="100" />
+			<bool name="browsable_in_editor" value="False" />
+			<float name="entity_scale" value="100" />
+			<enum name="subclass_type" value="Generic" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sim_entity_ext" List.ItemID="390667398">
+			<float name="rotate_snap" value="360" />
+			<bool name="kill_paradrop" value="False" />
+			<enum name="transferable" value="None" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="1140065914">
+			<bool name="snap_to_terrain" value="False" />
+			<float name="extra_build_test_footprint_x" value="0" />
+			<float name="extra_build_test_footprint_z" value="0" />
+			<float name="extra_build_test_footprint_offset_x" value="0" />
+			<float name="extra_build_test_footprint_offset_z" value="0" />
+			<float name="minimum_build_test_footprint_x" value="0" />
+			<float name="minimum_build_test_footprint_z" value="0" />
+			<enum name="impass_cell_check" value="AllCellsFree" />
+			<group name="footprint_scale">
+				<float name="x" value="0" />
+				<float name="y" value="0" />
+			</group>
+			<bool name="forced_axis_aligned_footprint" value="False" />
+			<bool name="remove_if_constructed_over" value="True" />
+			<list name="snap_to_surface_types">
+				<enum name="surface_type" value="Ground" List.ItemID="543417693" />
+			</list>
+			<bool name="snap_to_construction_grid" value="False" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="722882949">
+			<enum name="weapon_targeting" value="no_targeting" />
+			<bool name="intersection_testing" value="False" />
+			<list name="unit_type_list">
+			</list>
+			<list name="race_type_list">
+			</list>
+			<list name="attack_target_restriction_on_attacker">
+			</list>
+			<list name="attack_target_restriction_on_victim">
+			</list>
+			<enum_table name="weapon_category_targeting_filter">
+				<bool name="1melee" value="True" />
+				<bool name="2ranged" value="True" />
+				<bool name="3siege" value="False" />
+				<bool name="4charge" value="True" />
+				<bool name="5brace" value="True" />
+				<bool name="6auto_ability_cast" value="True" />
+				<bool name="7single_cast_ability" value="True" />
+				<bool name="8dummy" value="False" />
+				<bool name="9idle" value="True" />
+			</enum_table>
+			<list name="unit_type_list_selection_keybind_only">
+			</list>
+			<list name="unit_type_list_ui_appear_as_only">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\modifier_ext" List.ItemID="-1731540309">
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="1154588" />
+	<instance_reference name="parent_pbg" value="" />
+	<variant name="campaign">
+		<list name="extensions" comment="This object is a dummy entity in place of a &quot;starting building&quot; in the Mongol &quot;army&quot; instance. A null field causes issues. It should have no visuals.&#xD;&#xA;-Sept 2, 2020">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1484781405">
+				<file name="alternate_sua" value="" />
+				<bool name="always_revealed_in_fow" value="False" />
+				<bool name="is_visible_in_game" value="False" />
+				<int name="precise_size" value="-1" />
+				<enum name="default_spawn_type" value="" />
+				<instance_reference name="unit_badge" value="" />
+				<bool name="is_spawned_when_not_in_interactive_area" value="True" />
+				<bool name="is_wreck" value="False" />
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\_tech_art\_invisible_object" />
+				<float name="animator_scale" value="100" />
+				<bool name="browsable_in_editor" value="False" />
+				<float name="entity_scale" value="100" />
+				<enum name="subclass_type" value="Generic" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\sim_entity_ext" List.ItemID="-433007737">
+				<float name="rotate_snap" value="360" />
+				<bool name="kill_paradrop" value="False" />
+				<enum name="transferable" value="None" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="1861319140">
+				<bool name="snap_to_terrain" value="False" />
+				<float name="extra_build_test_footprint_x" value="0" />
+				<float name="extra_build_test_footprint_z" value="0" />
+				<float name="extra_build_test_footprint_offset_x" value="0" />
+				<float name="extra_build_test_footprint_offset_z" value="0" />
+				<float name="minimum_build_test_footprint_x" value="0" />
+				<float name="minimum_build_test_footprint_z" value="0" />
+				<enum name="impass_cell_check" value="AllCellsFree" />
+				<group name="footprint_scale">
+					<float name="x" value="0" />
+					<float name="y" value="0" />
+				</group>
+				<bool name="forced_axis_aligned_footprint" value="False" />
+				<bool name="remove_if_constructed_over" value="True" />
+				<list name="snap_to_surface_types">
+					<enum name="surface_type" value="Ground" List.ItemID="-2073875957" />
+				</list>
+				<bool name="snap_to_construction_grid" value="False" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1390068964">
+				<enum name="weapon_targeting" value="no_targeting" />
+				<bool name="intersection_testing" value="False" />
+				<list name="unit_type_list">
+				</list>
+				<list name="race_type_list">
+				</list>
+				<list name="attack_target_restriction_on_attacker">
+				</list>
+				<list name="attack_target_restriction_on_victim">
+				</list>
+				<enum_table name="weapon_category_targeting_filter">
+					<bool name="1melee" value="True" />
+					<bool name="2ranged" value="True" />
+					<bool name="3siege" value="False" />
+					<bool name="4charge" value="True" />
+					<bool name="5brace" value="True" />
+					<bool name="6auto_ability_cast" value="True" />
+					<bool name="7single_cast_ability" value="True" />
+					<bool name="8dummy" value="False" />
+					<bool name="9idle" value="True" />
+				</enum_table>
+				<list name="unit_type_list_selection_keybind_only">
+				</list>
+				<list name="unit_type_list_ui_appear_as_only">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\modifier_ext" List.ItemID="-364250926">
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="1154588" />
+		<instance_reference name="parent_pbg" value="" />
+	</variant>
+	<variant name="xp3">
+		<list name="extensions" comment="This object is a dummy entity in place of a &quot;starting building&quot; in the Mongol &quot;army&quot; instance. A null field causes issues. It should have no visuals.&#xD;&#xA;-Sept 2, 2020">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1168301653">
+				<file name="alternate_sua" value="" />
+				<bool name="always_revealed_in_fow" value="False" />
+				<bool name="is_visible_in_game" value="False" />
+				<int name="precise_size" value="-1" />
+				<enum name="default_spawn_type" value="" />
+				<instance_reference name="unit_badge" value="" />
+				<bool name="is_spawned_when_not_in_interactive_area" value="True" />
+				<bool name="is_wreck" value="False" />
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\_tech_art\_invisible_object" />
+				<float name="animator_scale" value="100" />
+				<bool name="browsable_in_editor" value="False" />
+				<float name="entity_scale" value="100" />
+				<enum name="subclass_type" value="Generic" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\sim_entity_ext" List.ItemID="390667398">
+				<float name="rotate_snap" value="360" />
+				<bool name="kill_paradrop" value="False" />
+				<enum name="transferable" value="None" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="1140065914">
+				<bool name="snap_to_terrain" value="False" />
+				<float name="extra_build_test_footprint_x" value="0" />
+				<float name="extra_build_test_footprint_z" value="0" />
+				<float name="extra_build_test_footprint_offset_x" value="0" />
+				<float name="extra_build_test_footprint_offset_z" value="0" />
+				<float name="minimum_build_test_footprint_x" value="0" />
+				<float name="minimum_build_test_footprint_z" value="0" />
+				<enum name="impass_cell_check" value="AllCellsFree" />
+				<group name="footprint_scale">
+					<float name="x" value="0" />
+					<float name="y" value="0" />
+				</group>
+				<bool name="forced_axis_aligned_footprint" value="False" />
+				<bool name="remove_if_constructed_over" value="True" />
+				<list name="snap_to_surface_types">
+					<enum name="surface_type" value="Ground" List.ItemID="543417693" />
+				</list>
+				<bool name="snap_to_construction_grid" value="False" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="722882949">
+				<enum name="weapon_targeting" value="no_targeting" />
+				<bool name="intersection_testing" value="False" />
+				<list name="unit_type_list">
+				</list>
+				<list name="race_type_list">
+				</list>
+				<list name="attack_target_restriction_on_attacker">
+				</list>
+				<list name="attack_target_restriction_on_victim">
+				</list>
+				<enum_table name="weapon_category_targeting_filter">
+					<bool name="1melee" value="True" />
+					<bool name="2ranged" value="True" />
+					<bool name="3siege" value="False" />
+					<bool name="4charge" value="True" />
+					<bool name="5brace" value="True" />
+					<bool name="6auto_ability_cast" value="True" />
+					<bool name="7single_cast_ability" value="True" />
+					<bool name="8dummy" value="False" />
+					<bool name="9idle" value="True" />
+				</enum_table>
+				<list name="unit_type_list_selection_keybind_only">
+				</list>
+				<list name="unit_type_list_ui_appear_as_only">
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\modifier_ext" List.ItemID="-1731540309">
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="1154588" />
+		<instance_reference name="parent_pbg" value="" />
+	</variant>
+</instance>

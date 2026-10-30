@@ -1,0 +1,484 @@
+<instance version="6" description="" template="army">
+	<group name="army_bag">
+		<group name="actions">
+			<string name="ability_ally_reinforcement_action_name" value="UI/command/coh2_troop_deployment_flag" />
+			<string name="ability_self_reinforcement_action_name" value="UI/command/coh2_troop_deployment_flag" />
+			<string name="ally_attack_here_action_name" value="UI/coh2_team_attack_here" />
+			<string name="ally_capture_here_action_name" value="UI/coh2_team_capture_here" />
+			<string name="ally_defend_here_action_name" value="UI/coh2_team_defend_here" />
+			<string name="fx_rally_point_action_name" value="ui/command/rally_point_order_loop" />
+			<string name="self_attack_here_action_name" value="" />
+			<string name="self_capture_here_action_name" value="" />
+			<string name="self_defend_here_action_name" value="" />
+			<string name="self_question_here_action_name" value="" />
+			<string name="ally_question_here_action_name" value="UI/coh2_team_question_here" />
+			<colour name="fx_rally_point_line_color_move" value="4293767680" />
+			<colour name="fx_rally_point_line_color_special" value="4285313770" />
+			<string name="fx_rally_point_action_name_special" value="ui/command/rally_point_order_loop_square" />
+			<string name="fx_rally_point_action_name_attack" value="ui/command/rally_point_order_loop_red" />
+			<colour name="fx_rally_point_line_color_attack" value="4294918455" />
+		</group>
+		<group name="casualties">
+			<float name="guaranteed_casualty_per_number_of_deaths" value="5" />
+			<int name="max_rescued_casualty_count" value="100" />
+		</group>
+		<enum_table name="resource_income_cap">
+			<float name="action" value="20" />
+			<float name="popcap" value="3.402823E+38" />
+			<float name="command" value="3.402823E+38" />
+			<float name="food" value="3.402823E+38" />
+			<float name="wood" value="3.402823E+38" />
+			<float name="stone" value="3.402823E+38" />
+			<float name="gold" value="3.402823E+38" />
+			<float name="militia_hre" value="0" />
+			<float name="merc_byz" value="0" />
+		</enum_table>
+		<group name="race_population_cap_table">
+			<float name="base_medic_cap" value="0" />
+			<float name="base_personnel_cap" value="0" />
+			<float name="base_vehicle_cap" value="0" />
+			<float name="max_medic_cap" value="0" />
+			<float name="max_personnel_cap" value="1000" />
+			<float name="max_vehicle_cap" value="0" />
+		</group>
+		<list name="abilities">
+		</list>
+		<enum_table name="resource_max_cap">
+			<float name="action" value="-1" />
+			<float name="popcap" value="200" />
+			<float name="command" value="10" />
+			<float name="food" value="200000" />
+			<float name="wood" value="200000" />
+			<float name="stone" value="200000" />
+			<float name="gold" value="200000" />
+			<float name="militia_hre" value="200000" />
+			<float name="merc_byz" value="0" />
+		</enum_table>
+		<string name="badge_path" value="DATA:\art\armies\west_german\badges\default_dif" />
+		<list name="production_buildings">
+		</list>
+		<group name="ai_production_info">
+			<list name="unlocking_upgrade_list">
+				<group name="unlocking_upgrade_info" List.ItemID="1862723915">
+					<instance_reference name="upgrade_pbg" value="upgrade\races\common\research\economy\upgrade_econ_resource_food_harvest_rate_2" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+						<instance_reference name="upgraded_squad" value="sbps\races\rus\unit_villager_1_rus" List.ItemID="1558631646" />
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info" List.ItemID="-1415729110">
+					<instance_reference name="upgrade_pbg" value="upgrade\races\common\research\economy\upgrade_econ_resource_food_harvest_rate_3" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+						<instance_reference name="upgraded_squad" value="sbps\races\rus\unit_villager_1_rus" List.ItemID="670993221" />
+					</list>
+				</group>
+				<group name="unlocking_upgrade_info" List.ItemID="-1768471671">
+					<instance_reference name="upgrade_pbg" value="upgrade\races\common\research\economy\upgrade_econ_resource_food_harvest_rate_4" />
+					<instance_reference name="unlocked_ability" value="" />
+					<instance_reference name="unlocked_building" value="" />
+					<list name="upgraded_squads">
+						<instance_reference name="upgraded_squad" value="sbps\races\rus\unit_villager_1_rus" List.ItemID="1054963093" />
+					</list>
+				</group>
+			</list>
+			<list name="loadouts">
+			</list>
+		</group>
+		<list name="team_size_point_resource_multiplier">
+		</list>
+		<list name="starting_buildings">
+			<group name="starting_building" List.ItemID="-671048611">
+				<string name="key" value="default_mp" />
+				<instance_reference name="building" value="ebps\races\rus\buildings\building_town_center_rus\building_town_center_capital_rus" />
+				<list name="player_upgrades">
+				</list>
+			</group>
+		</list>
+		<list name="field_support_production_styles">
+		</list>
+		<enum_table name="resource_starting_amount">
+			<float name="action" value="0" />
+			<float name="command" value="0" />
+			<float name="popcap" value="0" />
+			<float name="food" value="200" />
+			<float name="wood" value="200" />
+			<float name="stone" value="0" />
+			<float name="gold" value="100" />
+			<float name="militia_hre" value="0" />
+			<float name="merc_byz" value="0" />
+		</enum_table>
+		<state_tree_node name="start_actions_statetree" value="civ_start\Rus" />
+		<list name="upgrades">
+		</list>
+		<group name="ui">
+			<list name="global_traits_summary">
+				<group name="trait" comment="Civ Bonuses" List.ItemID="-451622659">
+					<locstring name="title" value="11197926" />
+					<locstring name="description" value="11227235" />
+					<file name="icon" value="event_queue_high_priority_large" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Woodland Federation" List.ItemID="-1162167976">
+					<locstring name="title" value="11155064" />
+					<locstring name="description" value="11227213" />
+					<file name="icon" value="races\rus\buildings\wooden_fortress" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Hunter Princes" List.ItemID="-175614160">
+					<locstring name="title" value="11227686" />
+					<locstring name="description" value="11227218" />
+					<file name="icon" value="races\rus\buildings\hunting_cabin" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Druzhina Retinue" List.ItemID="-1882114288">
+					<locstring name="title" value="11155068" />
+					<locstring name="description" value="11227219" />
+					<file name="icon" value="races\common\units\knight_2" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Lodya Reconstitution&#xD;&#xA;&#xD;&#xA;" List.ItemID="-1327655716">
+					<locstring name="title" value="11227220" />
+					<locstring name="description" value="11227221" />
+					<file name="icon" value="races\rus\abilities\general_ship" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Bounty Rewards&#xD;&#xA;&#xD;&#xA;" List.ItemID="-1116286299">
+					<locstring name="title" value="11227222" />
+					<locstring name="description" value="0" />
+					<file name="icon" value="races\rus\abilities\hunting_boon" />
+					<template_reference name="description_formatter" value="ui_text_formatter">
+						<list name="formatter_arguments">
+							<int name="int_value" value="100" List.ItemID="1016703112" />
+							<int name="int_value" value="10" List.ItemID="228834650" />
+							<int name="int_value" value="10" List.ItemID="1545654071" />
+							<int name="int_value" value="400" List.ItemID="2009958757" />
+							<int name="int_value" value="15" List.ItemID="1894153676" />
+							<int name="int_value" value="25" List.ItemID="706254263" />
+							<int name="int_value" value="1000" List.ItemID="-937481535" />
+							<int name="int_value" value="20" List.ItemID="1052278833" />
+							<int name="int_value" value="40" List.ItemID="-1550538592" />
+						</list>
+						<locstring name="formatter" value="11265677" />
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Influence" List.ItemID="1257180494">
+					<locstring name="title" value="11197927" />
+					<locstring name="description" value="11227227" />
+					<file name="icon" value="influence_buff" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="False" />
+				</group>
+				<group name="trait" comment="Unique Units" List.ItemID="-1903063237">
+					<locstring name="title" value="11155070" />
+					<locstring name="description" value="11227229" />
+					<file name="icon" value="event_queue_high_priority_large" />
+					<template_reference name="description_formatter" value="">
+					</template_reference>
+					<bool name="exclude_from_pc" value="True" />
+				</group>
+			</list>
+			<locstring name="subheader" value="11155062" />
+			<locstring name="one_liner" value="11217799" />
+			<file name="background_image" value="civ_flags\flag_rus" />
+			<int name="difficulty" value="2" />
+			<enum name="research_upgrade" value="rus_upgrade" />
+		</group>
+		<bool name="check_pop_cap_when_queuing_production_item" value="False" />
+		<enum_table name="upkeep_per_pop_per_minute_override">
+			<float name="action" value="0" />
+			<float name="command" value="0" />
+			<float name="popcap" value="0" />
+			<float name="food" value="0" />
+			<float name="wood" value="0" />
+			<float name="stone" value="0" />
+			<float name="gold" value="0" />
+			<float name="militia_hre" value="0" />
+			<float name="merc_byz" value="0" />
+		</enum_table>
+		<list name="starting_units">
+			<instance_reference name="squad" value="sbps\races\rus\unit_scout_1_rus" List.ItemID="-246105067" />
+			<instance_reference name="squad" value="sbps\races\rus\unit_villager_1_rus" List.ItemID="1241550755" />
+			<instance_reference name="squad" value="sbps\races\rus\unit_villager_1_rus" List.ItemID="272693195" />
+			<instance_reference name="squad" value="sbps\races\rus\unit_villager_1_rus" List.ItemID="1517023522" />
+			<instance_reference name="squad" value="sbps\races\rus\unit_villager_1_rus" List.ItemID="928818283" />
+			<instance_reference name="squad" value="sbps\races\rus\unit_villager_1_rus" List.ItemID="-1029288623" />
+			<instance_reference name="squad" value="sbps\races\rus\unit_villager_1_rus" List.ItemID="1721318096" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep" List.ItemID="-589607807" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep" List.ItemID="1683105614" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep_black" List.ItemID="196250772" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep_brown" List.ItemID="-494954032" />
+			<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep_brown" List.ItemID="-912899354" />
+		</list>
+		<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
+			<list name="spawn_positions">
+				<group name="position_offset" List.ItemID="-748728464">
+					<float name="x" value="-4" />
+					<float name="y" value="10" />
+				</group>
+				<group name="position_offset" List.ItemID="-1982241653">
+					<float name="x" value="-2.2" />
+					<float name="y" value="0" />
+				</group>
+				<group name="position_offset" List.ItemID="1408516542">
+					<float name="x" value="-3.3" />
+					<float name="y" value="-2" />
+				</group>
+				<group name="position_offset" List.ItemID="2038217164">
+					<float name="x" value="-1" />
+					<float name="y" value="-2" />
+				</group>
+				<group name="position_offset" List.ItemID="-168461279">
+					<float name="x" value="-2" />
+					<float name="y" value="-4" />
+				</group>
+				<group name="position_offset" List.ItemID="-1142131913">
+					<float name="x" value="0" />
+					<float name="y" value="-4" />
+				</group>
+				<group name="position_offset" List.ItemID="-1574589347">
+					<float name="x" value="-1" />
+					<float name="y" value="-6" />
+				</group>
+				<group name="position_offset" List.ItemID="526639767">
+					<float name="x" value="0" />
+					<float name="y" value="1.5" />
+				</group>
+				<group name="position_offset" List.ItemID="1507779188">
+					<float name="x" value="0.4" />
+					<float name="y" value="1.8" />
+				</group>
+				<group name="position_offset" List.ItemID="-2147005122">
+					<float name="x" value="0.8" />
+					<float name="y" value="2.1" />
+				</group>
+				<group name="position_offset" List.ItemID="762366531">
+					<float name="x" value="0.8" />
+					<float name="y" value="2.1" />
+				</group>
+				<group name="position_offset" List.ItemID="2066540808">
+					<float name="x" value="1.2" />
+					<float name="y" value="2.4" />
+				</group>
+			</list>
+		</template_reference>
+		<instance_reference name="starting_town" value="" />
+	</group>
+	<uniqueid name="pbgid" value="2127444" />
+	<instance_reference name="parent_pbg" value="" />
+	<variant name="campaign">
+		<group name="army_bag">
+			<group name="actions">
+				<string name="ability_ally_reinforcement_action_name" value="UI/command/coh2_troop_deployment_flag" />
+				<string name="ability_self_reinforcement_action_name" value="UI/command/coh2_troop_deployment_flag" />
+				<string name="ally_attack_here_action_name" value="UI/coh2_team_attack_here" />
+				<string name="ally_capture_here_action_name" value="UI/coh2_team_capture_here" />
+				<string name="ally_defend_here_action_name" value="UI/coh2_team_defend_here" />
+				<string name="fx_rally_point_action_name" value="ui/command/rally_point_order_loop" />
+				<string name="self_attack_here_action_name" value="" />
+				<string name="self_capture_here_action_name" value="" />
+				<string name="self_defend_here_action_name" value="" />
+				<string name="self_question_here_action_name" value="" />
+				<string name="ally_question_here_action_name" value="UI/coh2_team_question_here" />
+				<colour name="fx_rally_point_line_color_move" value="4293767680" />
+				<colour name="fx_rally_point_line_color_special" value="4285313770" />
+				<string name="fx_rally_point_action_name_special" value="ui/command/rally_point_order_loop_square" />
+				<string name="fx_rally_point_action_name_attack" value="ui/command/rally_point_order_loop_red" />
+				<colour name="fx_rally_point_line_color_attack" value="4294918455" />
+			</group>
+			<group name="casualties">
+				<float name="guaranteed_casualty_per_number_of_deaths" value="5" />
+				<int name="max_rescued_casualty_count" value="100" />
+			</group>
+			<enum_table name="resource_income_cap">
+				<float name="action" value="20" />
+				<float name="popcap" value="3.402823E+38" />
+				<float name="command" value="3.402823E+38" />
+				<float name="food" value="3.402823E+38" />
+				<float name="wood" value="3.402823E+38" />
+				<float name="stone" value="3.402823E+38" />
+				<float name="gold" value="3.402823E+38" />
+				<float name="militia_hre" value="0" />
+				<float name="merc_byz" value="0" />
+			</enum_table>
+			<group name="race_population_cap_table">
+				<float name="base_medic_cap" value="0" />
+				<float name="base_personnel_cap" value="0" />
+				<float name="base_vehicle_cap" value="0" />
+				<float name="max_medic_cap" value="0" />
+				<float name="max_personnel_cap" value="200" />
+				<float name="max_vehicle_cap" value="0" />
+			</group>
+			<list name="abilities">
+			</list>
+			<enum_table name="resource_max_cap">
+				<float name="action" value="-1" />
+				<float name="popcap" value="200" />
+				<float name="command" value="10" />
+				<float name="food" value="200000" />
+				<float name="wood" value="200000" />
+				<float name="stone" value="200000" />
+				<float name="gold" value="200000" />
+				<float name="militia_hre" value="0" />
+				<float name="merc_byz" value="0" />
+			</enum_table>
+			<string name="badge_path" value="DATA:\art\armies\west_german\badges\default_dif" />
+			<list name="production_buildings">
+			</list>
+			<group name="ai_production_info">
+				<list name="unlocking_upgrade_list">
+				</list>
+				<list name="loadouts">
+				</list>
+			</group>
+			<list name="team_size_point_resource_multiplier">
+			</list>
+			<list name="starting_buildings">
+				<group name="starting_building" List.ItemID="844066451">
+					<string name="key" value="default_mp" />
+					<instance_reference name="building" value="ebps\races\rus\buildings\building_town_center_rus\building_town_center_capital_rus" />
+					<list name="player_upgrades">
+					</list>
+				</group>
+			</list>
+			<list name="field_support_production_styles">
+			</list>
+			<enum_table name="resource_starting_amount">
+				<float name="action" value="0" />
+				<float name="command" value="0" />
+				<float name="popcap" value="0" />
+				<float name="food" value="200" />
+				<float name="wood" value="300" />
+				<float name="stone" value="0" />
+				<float name="gold" value="300" />
+				<float name="militia_hre" value="0" />
+				<float name="merc_byz" value="0" />
+			</enum_table>
+			<state_tree_node name="start_actions_statetree" value="campaignMod_civ_start\Rus" />
+			<list name="upgrades">
+			</list>
+			<group name="ui">
+				<list name="global_traits_summary">
+					<group name="trait" comment="Woodland Federation" List.ItemID="-893058350">
+						<locstring name="title" value="11155064" />
+						<locstring name="description" value="11155065" />
+						<file name="icon" value="event_queue_high_priority_large" />
+						<template_reference name="description_formatter" value="">
+						</template_reference>
+						<bool name="exclude_from_pc" value="False" />
+					</group>
+					<group name="trait" comment="Hunter Princes" List.ItemID="1881889849">
+						<locstring name="title" value="11155066" />
+						<locstring name="description" value="11155067" />
+						<file name="icon" value="event_queue_high_priority_large" />
+						<template_reference name="description_formatter" value="">
+						</template_reference>
+						<bool name="exclude_from_pc" value="False" />
+					</group>
+					<group name="trait" comment="Druzhina Retinue" List.ItemID="1896514977">
+						<locstring name="title" value="11155068" />
+						<locstring name="description" value="11155069" />
+						<file name="icon" value="event_queue_high_priority_large" />
+						<template_reference name="description_formatter" value="">
+						</template_reference>
+						<bool name="exclude_from_pc" value="False" />
+					</group>
+					<group name="trait" comment="Civ Bonuses" List.ItemID="-1190119210">
+						<locstring name="title" value="11197926" />
+						<locstring name="description" value="11197928" />
+						<file name="icon" value="event_queue_high_priority_large" />
+						<template_reference name="description_formatter" value="">
+						</template_reference>
+						<bool name="exclude_from_pc" value="False" />
+					</group>
+					<group name="trait" comment="Influence" List.ItemID="-1317005496">
+						<locstring name="title" value="11197927" />
+						<locstring name="description" value="11155071" />
+						<file name="icon" value="event_queue_high_priority_large" />
+						<template_reference name="description_formatter" value="">
+						</template_reference>
+						<bool name="exclude_from_pc" value="False" />
+					</group>
+					<group name="trait" comment="Unique Units" List.ItemID="618311450">
+						<locstring name="title" value="11155070" />
+						<locstring name="description" value="11197930" />
+						<file name="icon" value="event_queue_high_priority_large" />
+						<template_reference name="description_formatter" value="">
+						</template_reference>
+						<bool name="exclude_from_pc" value="False" />
+					</group>
+				</list>
+				<locstring name="subheader" value="11155062" />
+				<locstring name="one_liner" value="11155063" />
+				<file name="background_image" value="civ_flags\flag_rus" />
+				<int name="difficulty" value="2" />
+				<enum name="research_upgrade" value="rus_upgrade" />
+			</group>
+			<bool name="check_pop_cap_when_queuing_production_item" value="False" />
+			<enum_table name="upkeep_per_pop_per_minute_override">
+				<float name="action" value="0" />
+				<float name="command" value="0" />
+				<float name="popcap" value="0" />
+				<float name="food" value="0" />
+				<float name="wood" value="0" />
+				<float name="stone" value="0" />
+				<float name="gold" value="0" />
+				<float name="militia_hre" value="0" />
+				<float name="merc_byz" value="0" />
+			</enum_table>
+			<list name="starting_units">
+				<instance_reference name="squad" value="sbps\races\rus\unit_scout_1_rus" List.ItemID="1518009959" />
+				<instance_reference name="squad" value="sbps\races\rus\unit_villager_1_rus" List.ItemID="326155161" />
+				<instance_reference name="squad" value="sbps\races\rus\unit_villager_1_rus" List.ItemID="1193437070" />
+				<instance_reference name="squad" value="sbps\races\rus\unit_villager_1_rus" List.ItemID="1845638655" />
+				<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep" List.ItemID="-2049580788" />
+				<instance_reference name="squad" value="sbps\races\gaia\animals\gaia_herdable_sheep" List.ItemID="-1167433022" />
+			</list>
+			<template_reference name="starting_units_spawner" value="options\spawn\fixed_offset">
+				<list name="spawn_positions">
+					<group name="position_offset" List.ItemID="774384443">
+						<float name="x" value="-4" />
+						<float name="y" value="5" />
+					</group>
+					<group name="position_offset" List.ItemID="675268791">
+						<float name="x" value="-3" />
+						<float name="y" value="-1" />
+					</group>
+					<group name="position_offset" List.ItemID="1030442093">
+						<float name="x" value="-1" />
+						<float name="y" value="-2" />
+					</group>
+					<group name="position_offset" List.ItemID="-505627303">
+						<float name="x" value="0" />
+						<float name="y" value="-4" />
+					</group>
+					<group name="position_offset" List.ItemID="-906501432">
+						<float name="x" value="0" />
+						<float name="y" value="0" />
+					</group>
+					<group name="position_offset" List.ItemID="-2032349107">
+						<float name="x" value="0" />
+						<float name="y" value="0" />
+					</group>
+				</list>
+			</template_reference>
+			<instance_reference name="starting_town" value="" />
+		</group>
+		<uniqueid name="pbgid" value="2127444" />
+		<instance_reference name="parent_pbg" value="" />
+	</variant>
+</instance>
