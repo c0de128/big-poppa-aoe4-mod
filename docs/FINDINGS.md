@@ -1,5 +1,21 @@
 # FINDINGS (Claude Code updates this after each phase)
 
+## Current status (2026-10-30)
+
+| | BIG POPPA | BIG POPPA 500 |
+|---|---|---|
+| Listing | #503437 | #562254 (new) |
+| Pop (`max_personnel_cap` / `resource_max_cap/popcap`, all 25 civs) | 1000 / 1000 | 500 / 500 |
+| Viking villager limit | 1000 | 500 |
+| Latest verified build | 12:34, SHA-256 `9402119f…` | 13:11, SHA-256 `c02e00bd…` |
+| Published copy matches build? | ⏳ **Not yet confirmed.** The download on this PC was still the 12:06 build (`bc0c1deab…`) | ✅ Yes |
+| Tested in game | ✅ (the 10:23 build; the popcap change itself is untested) | ✅ "worked perfectly" |
+
+- Everything else is the same in both mods: storage 200k, 50k piles (except 3 `_emi` fish and the live enchanted stag), 2 villagers per TC train, Golden Horde 2 scouts, and Tughlaq elephants at 1.
+- Public repo: https://github.com/c0de128/big-poppa-aoe4-mod
+- Phase log below (oldest first). Earlier phases describe things as they were then. Later phases supersede them.
+
+
 ## Phase 1 — Find the mod (done 2026-10-30, read-only)
 
 ### Plain English

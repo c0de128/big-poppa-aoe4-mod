@@ -1,5 +1,12 @@
 # RESEARCH — Phase 0 (research only, 2026-10-30)
 
+> **Later results (2026-10-30):**
+> - ✅ Republishing the *original* project updated the existing listing #503437. The rating was kept, and the download was verified identical to the build.
+> - ✅ The source project existed, so no rebuild from scratch was needed.
+> - ✅ The editor source format is plain XML. Writing it directly and building in the editor works.
+> - ✅ A new project (BIG POPPA 500) with its own ID published as a separate listing (#562254).
+> - See `FINDINGS.md` for evidence. The ❓ items below are kept as written at the time.
+
 No files outside this project folder were touched. Nothing was downloaded or run.
 
 **Legend**

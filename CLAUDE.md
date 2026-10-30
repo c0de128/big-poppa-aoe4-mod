@@ -16,23 +16,35 @@ You are helping Kev update his AoE4 mod **"Big Poppa"**. Read this file first, t
 - **Explain simply.** Kev wants plain-English summaries (like explaining to a 12-year-old), short, with the technical detail available underneath.
 - Windows paths. Kev's `Documents` folder may be redirected to **OneDrive** — always check both `%USERPROFILE%\Documents` and `%USERPROFILE%\OneDrive\Documents`.
 
-## Folder layout (create as needed)
+## The two mods (as of 2026-10-30)
+
+| Mod | Pop cap | Project folder (in `...\OneDrive - <Company>\Documents\My Games\Age of Empires IV\mods\`) | Mod ID | Listing |
+|---|---|---|---|---|
+| **BIG POPPA** | 1000 | `BigPoppa\BigPoppa.aoe4mod` | `1bfbb3a8-719b-448e-8469-f58c7363bc36` | #503437 |
+| **BIG POPPA 500** | 500 | `BIG POPPA 500\BIG POPPA 500.aoe4mod` | `44d9ed12-23d8-4545-b9bf-501dc39221bf` | #562254 |
+
+- The two mods are identical except for the pop values (`max_personnel_cap` and `resource_max_cap/popcap` on all 25 civs, plus the Vikings' `max_vehicle_cap`), the mod ID, the name, the description and the cover art.
+- Never copy one mod's ID or metadata files into the other. Only the data files (`assets\attrib\instances\`) are shared.
+- Public source repo: https://github.com/c0de128/big-poppa-aoe4-mod (local clone `C:\_dev\big-poppa-aoe4-mod`).
+  - `mod/` = BIG POPPA and `mod-500/` = BIG POPPA 500.
+  - Before every push, replace personal paths with placeholders. Commit as `kevin.mckay@outlook.com`.
+
+## Folder layout
 
 ```
-big-poppa/
+aoe4-mod-big-poppa/
   CLAUDE.md
-  docs/                  <- planning + findings (keep updated)
-  tools/                 <- AOEMods.Essence CLI and any helper scripts
-  work/
-    original_mod/        <- COPY of Big Poppa's compiled files (read-only reference)
-    original_decoded/    <- Big Poppa unpacked + decoded to JSON
-    vanilla_decoded/     <- current game's Attrib.sga unpacked + decoded to JSON
-    diff/                <- reports comparing the two
-  output/                <- change spec / anything Kev applies in the Content Editor
+  docs/        <- planning + findings (keep updated; FINDINGS.md is the record)
+  tools/       <- AOEMods.Essence 0.7.0 CLI + helper scripts:
+                  bp_transform.py (apply edits), bp_verify.py (allowed-diff check),
+                  sga_dump_all.py / sga_count.py (read ALL TOCs of a .sga),
+                  rgd_values.py / rgd_spawns.py (read decoded JSON)
+  work/        <- copies, vanilla 17.0 reference data, builds, diffs, backups (never published)
 ```
 
 ## Definition of done
 
-- Every civ in the current game (including **Vikings** and **Scots**) gets the same Big Poppa changes the original civs had.
-- Population cap is **1000** for every civ.
-- Kev has rebuilt the mod in the Content Editor, tested a skirmish as Vikings and as Scots, and published the update.
+- [x] Every civ in the current game (including **Vikings** and **Scots**) gets the same Big Poppa changes the original civs had.
+- [x] Population cap is **1000** for every civ, on both pop values (BIG POPPA 500: 500).
+- [x] Kev rebuilt, tested, and published. BIG POPPA 500 was published as a new listing (#562254).
+- [ ] **Open:** confirm the latest BIG POPPA publish (1000 on both values for all civs, build `9402119f…`) actually reached listing #503437. See `docs/HUMAN_STEPS.md`.

@@ -2,6 +2,15 @@
 
 Read this before Phase 1. Items marked **VERIFY** are from community sources — confirm against real files.
 
+> **Verified on Kev's PC (2026-10-30):**
+> - Documents is redirected to `%USERPROFILE%\OneDrive - <Company>\Documents`.
+> - Subscribed mods live in `mods\extension\subscriptions\<listing id>\` (not `subscribed`). Local builds live in `mods\extension\local\<mod>\`.
+> - Content Editor projects are plain XML in `mods\<ModName>\`. Overrides are under `assets\attrib\instances\` and are **full copies** of the base file, not deltas.
+> - Pop cap uses **two** fields per civ: `army_bag/race_population_cap_table/max_personnel_cap` and `army_bag/resource_max_cap/popcap`. Some civs also have a separate `max_vehicle_cap` (e.g. Viking villagers).
+> - Starting resources are not changed by Big Poppa.
+> - Republishing the same project from the Mod Publisher updates the existing listing and keeps its rating.
+> - AOEMods.Essence 0.7.0 reads only the **first** table of contents of a mod `.sga`. Use `tools/sga_dump_all.py` to see every file, including the description and cover.
+
 ## 1. How AoE4 mods are made and shipped
 
 - Mods are built in Relic's official **Content Editor** (`EssenceEditor.exe`, installed with the game / "AoE4 Content Editor" tool). It's a **GUI** — Claude Code can't click through it. Kev does those steps (see `HUMAN_STEPS.md`).
